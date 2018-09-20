@@ -5,7 +5,7 @@
 # usage: fontforge -script narrow.pe scale *.sfd
 #   created files have suffix .narrow
 
-# DejaVu Condensed have scale 90
+# Brutalist Condensed have scale 90
 
 if ($version < "20050209")
   Error("Your version of FontForge transforms glyphs w/o content");
@@ -19,7 +19,7 @@ while (i < $argc)
   Open($argv[i], 1)
   SelectAll()
   Scale(scale, 100, 0, 0)
-  # Panose changes are valid only for DejaVu fonts (I guess)
+  # Panose changes are valid only for Brutalist fonts (I guess)
   SetPanose(3, 6)
   new_fontname = $fontname
   old_familyname = $familyname

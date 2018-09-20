@@ -14,7 +14,7 @@ while (i < $argc)
   SelectAll()
   Skew(angle)
   SetItalicAngle(-angle)
-  # Panose changes are valid only for DejaVu fonts (I guess)
+  # Panose changes are valid only for Brutalist fonts (I guess)
   SetPanose(5, 3)
   SetPanose(7, 11)
   new_fontname = $fontname

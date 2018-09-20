@@ -5,7 +5,7 @@
 # This script will merge new glyphs into the condensed faces.
 
 # It scans for Condensed faces in the current directory and creates
-# new files called DejaVuCondensed*.sfd.merged
+# new files called BrutalistCondensed*.sfd.merged
 
 # The script requires that all fonts are normalized with
 # sfdnormalize.pl. The newly created .merged file is automatically

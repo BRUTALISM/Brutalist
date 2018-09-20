@@ -5,7 +5,7 @@
 # usage: fontforge -script narrowmerge.pe scale sfd glyph_codes*
 #   created file has suffix .narrow
 
-# DejaVu Condensed have scale 90
+# Brutalist Condensed have scale 90
 
 if ($version < "20050209")
   Error("Your version of FontForge transforms glyphs w/o content");

@@ -99,7 +99,7 @@ sub parse_sfd_file(\%$$) {
   $version_tag = normalize_version($version_tag);
   while (<SFD>) {
     if (/^FullName:\s+\S+\s+(.*?)\s*$/) {
-      # DejaVu is not included in typeface
+      # Brutalist is not included in typeface
       $typeface = $1;
       $parsed_typefaces{$typeface} = 1;
     } elsif (/^StartChar:\s*(\S+)\s*$/) {

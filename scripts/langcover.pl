@@ -148,7 +148,7 @@ sub parse_sfd_file($) {
 # TODO: formats would be better
 sub print_coverage() {
   print <<END;
-This is the language coverage file for DejaVu fonts
+This is the language coverage file for Brutalist fonts
 (\$Id\$)
 
 END

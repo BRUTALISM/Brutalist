@@ -2,7 +2,7 @@
 
 # call this script from the main directory like scripts/wikidownloadtemplate.sh
 
-# use the output of this script to update http://dejavu.sourceforge.net/wiki/index.php?title=Download
+# use the output of this script to update http://brutalist.sourceforge.net/wiki/index.php?title=Download
 
 
 # assumes that version in Makefile is correct (which it should be or something was done wrong)
@@ -38,15 +38,15 @@ function makeentry
 }
 
 
-makeentry "dejavu-fonts-ttf-${VERSION}.tar.bz2" "TrueType fonts packed as [[Wikipedia:tar.bz2|tar.bz2]] archive"
+makeentry "brutalist-fonts-ttf-${VERSION}.tar.bz2" "TrueType fonts packed as [[Wikipedia:tar.bz2|tar.bz2]] archive"
 
-makeentry "dejavu-fonts-ttf-${VERSION}.zip" "TrueType fonts packed as [[Wikipedia:ZIP (file format)|zip]] archive"
+makeentry "brutalist-fonts-ttf-${VERSION}.zip" "TrueType fonts packed as [[Wikipedia:ZIP (file format)|zip]] archive"
 
-makeentry "dejavu-fonts-${VERSION}.tar.bz2" "Fonts in source form (SFD) for [[FontForge]]"
+makeentry "brutalist-fonts-${VERSION}.tar.bz2" "Fonts in source form (SFD) for [[FontForge]]"
 
-makeentry "dejavu-lgc-fonts-ttf-${VERSION}.tar.bz2" "DejaVu LGC (Latin, Greek, Cyrillic) TrueType fonts packed as [[Wikipedia:tar.bz2|tar.bz2]] archive"
+makeentry "brutalist-lgc-fonts-ttf-${VERSION}.tar.bz2" "Brutalist LGC (Latin, Greek, Cyrillic) TrueType fonts packed as [[Wikipedia:tar.bz2|tar.bz2]] archive"
 
-makeentry "dejavu-lgc-fonts-ttf-${VERSION}.zip" "DejaVu LGC (Latin, Greek, Cyrillic) TrueType fonts packed as [[Wikipedia:ZIP (file format)|zip]] archive"
+makeentry "brutalist-lgc-fonts-ttf-${VERSION}.zip" "Brutalist LGC (Latin, Greek, Cyrillic) TrueType fonts packed as [[Wikipedia:ZIP (file format)|zip]] archive"
 
-makeentry "dejavu-sans-ttf-${VERSION}.zip" "This package only includes DejaVuSans.ttf in a [[Wikipedia:ZIP (file format)|zip]] archive"
+makeentry "brutalist-ttf-${VERSION}.zip" "This package only includes Brutalist.ttf in a [[Wikipedia:ZIP (file format)|zip]] archive"
 

@@ -26,10 +26,10 @@ else
 ARCHIVEVER = $(VERSION)-$(SNAPSHOT)
 endif
 
-SRCARCHIVE  = dejavu-fonts-$(ARCHIVEVER)
-FULLARCHIVE = dejavu-fonts-ttf-$(ARCHIVEVER)
-SANSARCHIVE = dejavu-sans-ttf-$(ARCHIVEVER)
-LGCARCHIVE  = dejavu-lgc-fonts-ttf-$(ARCHIVEVER)
+SRCARCHIVE  = brutalist-fonts-$(ARCHIVEVER)
+FULLARCHIVE = brutalist-fonts-ttf-$(ARCHIVEVER)
+SANSARCHIVE = brutalist-ttf-$(ARCHIVEVER)
+LGCARCHIVE  = brutalist-lgc-fonts-ttf-$(ARCHIVEVER)
 
 ARCHIVEEXT = .zip .tar.bz2
 SUMEXT     = .zip.md5 .tar.bz2.md5 .tar.bz2.sha512
@@ -55,7 +55,7 @@ FULLSFD  := $(patsubst $(SRCDIR)/%.sfd, $(TMPDIR)/%.sfd, $(SRC))
 NORMSFD  := $(patsubst %, %.norm, $(FULLSFD))
 MATSHSFD := $(wildcard $(SRCDIR)/*Math*.sfd)
 LGCSRC   := $(filter-out $(MATSHSFD),$(SRC))
-LGCSFD   := $(patsubst $(SRCDIR)/DejaVu%.sfd, $(TMPDIR)/DejaVuLGC%.sfd, $(LGCSRC))
+LGCSFD   := $(patsubst $(SRCDIR)/Brutalist%.sfd, $(TMPDIR)/BrutalistLGC%.sfd, $(LGCSRC))
 FULLTTF  := $(patsubst $(TMPDIR)/%.sfd, $(BUILDDIR)/%.ttf, $(FULLSFD))
 LGCTTF   := $(patsubst $(TMPDIR)/%.sfd, $(BUILDDIR)/%.ttf, $(LGCSFD))
 
@@ -77,20 +77,20 @@ $(TMPDIR)/%.sfd: $(SRCDIR)/%.sfd
 	sed "s@\(Version:\? \)\(0\.[0-9]\+\.[0-9]\+\|[1-9][0-9]*\.[0-9]\+\)@\1$(VERSION)@" $< > $@
 	touch -r $< $@
 
-$(TMPDIR)/DejaVuLGCMathTeXGyre.sfd: $(TMPDIR)/DejaVuMathTeXGyre.sfd
+$(TMPDIR)/BrutalistLGCMathTeXGyre.sfd: $(TMPDIR)/BrutalistMathTeXGyre.sfd
 	@echo "[2] skipping $<"
 
-$(TMPDIR)/DejaVuLGC%.sfd: $(TMPDIR)/DejaVu%.sfd
+$(TMPDIR)/BrutalistLGC%.sfd: $(TMPDIR)/Brutalist%.sfd
 	@echo "[2] $< => $@"
-	sed -e 's,FontName: DejaVu,FontName: DejaVuLGC,'\
-	    -e 's,FullName: DejaVu,FullName: DejaVu LGC,'\
-	    -e 's,FamilyName: DejaVu,FamilyName: DejaVu LGC,'\
-	    -e 's,"DejaVu \(\(Sans\|Serif\)*\( Condensed\| Mono\)*\( Bold\)*\( Oblique\|Italic\)*\)","DejaVu LGC \1",g' < $< > $@
+	sed -e 's,FontName: Brutalist,FontName: BrutalistLGC,'\
+	    -e 's,FullName: Brutalist,FullName: Brutalist LGC,'\
+	    -e 's,FamilyName: Brutalist,FamilyName: Brutalist LGC,'\
+	    -e 's,"Brutalist \(\(Sans\|Serif\)*\( Condensed\| Mono\)*\( Bold\)*\( Oblique\|Italic\)*\)","Brutalist LGC \1",g' < $< > $@
 	@echo "Stripping unwanted glyphs from $@"
 	$(LGC) $@
 	touch -r $< $@
 
-$(BUILDDIR)/DejaVuLGCMathTeXGyre.ttf: $(TMPDIR)/DejaVuLGCMathTeXGyre.sfd
+$(BUILDDIR)/BrutalistLGCMathTeXGyre.ttf: $(TMPDIR)/BrutalistLGCMathTeXGyre.sfd
 	@echo "[3] skipping $<"
 
 $(BUILDDIR)/%.ttf: $(TMPDIR)/%.sfd
@@ -107,60 +107,60 @@ $(BUILDDIR)/status.txt: $(FULLSFD)
 	install -d $(dir $@)
 	$(STATUS) $(VERSION) $(OLDSTATUS) $(FULLSFD) > $@
 
-$(BUILDDIR)/unicover.txt: $(patsubst %, $(TMPDIR)/%.sfd, DejaVuSans DejaVuSerif DejaVuSansMono)
+$(BUILDDIR)/unicover.txt: $(patsubst %, $(TMPDIR)/%.sfd, Brutalist BrutalistSerif BrutalistMono)
 	@echo "[5] => $@"
 	install -d $(dir $@)
 	$(UNICOVER) $(UNICODEDATA) $(BLOCKS) \
-	            $(TMPDIR)/DejaVuSans.sfd "Sans" \
-	            $(TMPDIR)/DejaVuSerif.sfd "Serif" \
-	            $(TMPDIR)/DejaVuSansMono.sfd "Sans Mono" > $@
+	            $(TMPDIR)/Brutalist.sfd "Sans" \
+	            $(TMPDIR)/BrutalistSerif.sfd "Serif" \
+	            $(TMPDIR)/BrutalistMono.sfd "Sans Mono" > $@
 
-$(BUILDDIR)/unicover-sans.txt: $(TMPDIR)/DejaVuSans.sfd
+$(BUILDDIR)/unicover-sans.txt: $(TMPDIR)/Brutalist.sfd
 	@echo "[5] => $@"
 	install -d $(dir $@)
 	$(UNICOVER) $(UNICODEDATA) $(BLOCKS) \
-	            $(TMPDIR)/DejaVuSans.sfd "Sans" > $@
+	            $(TMPDIR)/Brutalist.sfd "Sans" > $@
 
-$(BUILDDIR)/unicover-lgc.txt: $(patsubst %, $(TMPDIR)/%.sfd, DejaVuLGCSans DejaVuLGCSerif DejaVuLGCSansMono)
+$(BUILDDIR)/unicover-lgc.txt: $(patsubst %, $(TMPDIR)/%.sfd, BrutalistLGCSans BrutalistLGCSerif BrutalistLGCSansMono)
 	@echo "[5] => $@"
 	install -d $(dir $@)
 	$(UNICOVER) $(UNICODEDATA) $(BLOCKS) \
-	            $(TMPDIR)/DejaVuLGCSans.sfd "Sans" \
-	            $(TMPDIR)/DejaVuLGCSerif.sfd "Serif" \
-	            $(TMPDIR)/DejaVuLGCSansMono.sfd "Sans Mono" > $@
+	            $(TMPDIR)/BrutalistLGCSans.sfd "Sans" \
+	            $(TMPDIR)/BrutalistLGCSerif.sfd "Serif" \
+	            $(TMPDIR)/BrutalistLGCSansMono.sfd "Sans Mono" > $@
 
-$(BUILDDIR)/langcover.txt: $(patsubst %, $(TMPDIR)/%.sfd, DejaVuSans DejaVuSerif DejaVuSansMono)
+$(BUILDDIR)/langcover.txt: $(patsubst %, $(TMPDIR)/%.sfd, Brutalist BrutalistSerif BrutalistMono)
 	@echo "[6] => $@"
 	install -d $(dir $@)
 ifeq "$(FC-LANG)" ""
 	touch $@
 else
 	$(LANGCOVER) $(FC-LANG) \
-	             $(TMPDIR)/DejaVuSans.sfd "Sans" \
-	             $(TMPDIR)/DejaVuSerif.sfd "Serif" \
-	             $(TMPDIR)/DejaVuSansMono.sfd "Sans Mono" > $@
+	             $(TMPDIR)/Brutalist.sfd "Sans" \
+	             $(TMPDIR)/BrutalistSerif.sfd "Serif" \
+	             $(TMPDIR)/BrutalistMono.sfd "Sans Mono" > $@
 endif
 
-$(BUILDDIR)/langcover-sans.txt: $(TMPDIR)/DejaVuSans.sfd
+$(BUILDDIR)/langcover-sans.txt: $(TMPDIR)/Brutalist.sfd
 	@echo "[6] => $@"
 	install -d $(dir $@)
 ifeq "$(FC-LANG)" ""
 	touch $@
 else
 	$(LANGCOVER) $(FC-LANG) \
-	             $(TMPDIR)/DejaVuSans.sfd "Sans" > $@
+	             $(TMPDIR)/Brutalist.sfd "Sans" > $@
 endif
 
-$(BUILDDIR)/langcover-lgc.txt: $(patsubst %, $(TMPDIR)/%.sfd, DejaVuLGCSans DejaVuLGCSerif DejaVuLGCSansMono)
+$(BUILDDIR)/langcover-lgc.txt: $(patsubst %, $(TMPDIR)/%.sfd, BrutalistLGCSans BrutalistLGCSerif BrutalistLGCSansMono)
 	@echo "[6] => $@"
 	install -d $(dir $@)
 ifeq "$(FC-LANG)" ""
 	touch $@
 else
 	$(LANGCOVER) $(FC-LANG) \
-	             $(TMPDIR)/DejaVuLGCSans.sfd "Sans" \
-	             $(TMPDIR)/DejaVuLGCSerif.sfd "Serif" \
-	             $(TMPDIR)/DejaVuLGCSansMono.sfd "Sans Mono" > $@
+	             $(TMPDIR)/BrutalistLGCSans.sfd "Sans" \
+	             $(TMPDIR)/BrutalistLGCSerif.sfd "Serif" \
+	             $(TMPDIR)/BrutalistLGCSansMono.sfd "Sans Mono" > $@
 endif
 
 $(BUILDDIR)/Makefile: Makefile
@@ -199,7 +199,7 @@ $(TMPDIR)/$(SANSARCHIVE): sans
 	@echo "[8] => $@"
 	install -d -m 0755 $@/$(TTFDIR)
 	install -d -m 0755 $@/$(DOCDIR)
-	install -p -m 0644 $(BUILDDIR)/DejaVuSans.ttf $@/$(TTFDIR)
+	install -p -m 0644 $(BUILDDIR)/Brutalist.ttf $@/$(TTFDIR)
 	install -p -m 0644 $(addprefix $(BUILDDIR)/, $(GENDOCSANS)) \
 	                   $(STATICDOC) $@/$(DOCDIR)
 
@@ -250,7 +250,7 @@ munge: $(NORMSFD)
 
 full : $(FULLTTF) $(addprefix $(BUILDDIR)/, $(GENDOCFULL))
 
-sans : $(addprefix $(BUILDDIR)/, DejaVuSans.ttf $(GENDOCSANS))
+sans : $(addprefix $(BUILDDIR)/, Brutalist.ttf $(GENDOCSANS))
 
 lgc : $(LGCTTF) $(addprefix $(BUILDDIR)/, $(GENDOCLGC))
 
@@ -258,7 +258,7 @@ ttf : full-ttf sans-ttf lgc-ttf
 
 full-ttf : $(FULLTTF)
 
-sans-ttf: $(BUILDDIR)/DejaVuSans.ttf
+sans-ttf: $(BUILDDIR)/Brutalist.ttf
 
 lgc-ttf : $(LGCTTF)
 
@@ -284,27 +284,27 @@ clean :
 	$(RM) -r $(TMPDIR) $(BUILDDIR) $(DISTDIR)
 
 condensed: $(NORMSFD)
-	$(NARROW) 90 $(TMPDIR)/DejaVuSans.sfd.norm
-	$(NARROW) 90 $(TMPDIR)/DejaVuSans-Bold.sfd.norm
-	$(NARROW) 90 $(TMPDIR)/DejaVuSans-Oblique.sfd.norm
-	$(NARROW) 90 $(TMPDIR)/DejaVuSans-BoldOblique.sfd.norm
-	$(NARROW) 90 $(TMPDIR)/DejaVuSerif.sfd.norm
-	$(NARROW) 90 $(TMPDIR)/DejaVuSerif-Bold.sfd.norm
-	$(NARROW) 90 $(TMPDIR)/DejaVuSerif-Italic.sfd.norm
-	$(NARROW) 90 $(TMPDIR)/DejaVuSerif-BoldItalic.sfd.norm
-	$(NORMALIZE) $(TMPDIR)/DejaVuSans.sfd.norm.narrow
-	$(NORMALIZE) $(TMPDIR)/DejaVuSans-Bold.sfd.norm.narrow
-	$(NORMALIZE) $(TMPDIR)/DejaVuSans-Oblique.sfd.norm.narrow
-	$(NORMALIZE) $(TMPDIR)/DejaVuSans-BoldOblique.sfd.norm.narrow
-	$(NORMALIZE) $(TMPDIR)/DejaVuSerif.sfd.norm.narrow
-	$(NORMALIZE) $(TMPDIR)/DejaVuSerif-Bold.sfd.norm.narrow
-	$(NORMALIZE) $(TMPDIR)/DejaVuSerif-Italic.sfd.norm.narrow
-	$(NORMALIZE) $(TMPDIR)/DejaVuSerif-BoldItalic.sfd.norm.narrow
-	cp $(TMPDIR)/DejaVuSans.sfd.norm.narrow.norm $(TMPDIR)/DejaVuSansCondensed.sfd.norm
-	cp $(TMPDIR)/DejaVuSans-Bold.sfd.norm.narrow.norm $(TMPDIR)/DejaVuSansCondensed-Bold.sfd.norm
-	cp $(TMPDIR)/DejaVuSans-Oblique.sfd.norm.narrow.norm $(TMPDIR)/DejaVuSansCondensed-Oblique.sfd.norm
-	cp $(TMPDIR)/DejaVuSans-BoldOblique.sfd.norm.narrow.norm $(TMPDIR)/DejaVuSansCondensed-BoldOblique.sfd.norm
-	cp $(TMPDIR)/DejaVuSerif.sfd.norm.narrow.norm $(TMPDIR)/DejaVuSerifCondensed.sfd.norm
-	cp $(TMPDIR)/DejaVuSerif-Bold.sfd.norm.narrow.norm $(TMPDIR)/DejaVuSerifCondensed-Bold.sfd.norm
-	cp $(TMPDIR)/DejaVuSerif-Italic.sfd.norm.narrow.norm $(TMPDIR)/DejaVuSerifCondensed-Italic.sfd.norm
-	cp $(TMPDIR)/DejaVuSerif-BoldItalic.sfd.norm.narrow.norm $(TMPDIR)/DejaVuSerifCondensed-BoldItalic.sfd.norm
+	$(NARROW) 90 $(TMPDIR)/Brutalist.sfd.norm
+	$(NARROW) 90 $(TMPDIR)/Brutalist-Bold.sfd.norm
+	$(NARROW) 90 $(TMPDIR)/Brutalist-Oblique.sfd.norm
+	$(NARROW) 90 $(TMPDIR)/Brutalist-BoldOblique.sfd.norm
+	$(NARROW) 90 $(TMPDIR)/BrutalistSerif.sfd.norm
+	$(NARROW) 90 $(TMPDIR)/BrutalistSerif-Bold.sfd.norm
+	$(NARROW) 90 $(TMPDIR)/BrutalistSerif-Italic.sfd.norm
+	$(NARROW) 90 $(TMPDIR)/BrutalistSerif-BoldItalic.sfd.norm
+	$(NORMALIZE) $(TMPDIR)/Brutalist.sfd.norm.narrow
+	$(NORMALIZE) $(TMPDIR)/Brutalist-Bold.sfd.norm.narrow
+	$(NORMALIZE) $(TMPDIR)/Brutalist-Oblique.sfd.norm.narrow
+	$(NORMALIZE) $(TMPDIR)/Brutalist-BoldOblique.sfd.norm.narrow
+	$(NORMALIZE) $(TMPDIR)/BrutalistSerif.sfd.norm.narrow
+	$(NORMALIZE) $(TMPDIR)/BrutalistSerif-Bold.sfd.norm.narrow
+	$(NORMALIZE) $(TMPDIR)/BrutalistSerif-Italic.sfd.norm.narrow
+	$(NORMALIZE) $(TMPDIR)/BrutalistSerif-BoldItalic.sfd.norm.narrow
+	cp $(TMPDIR)/Brutalist.sfd.norm.narrow.norm $(TMPDIR)/BrutalistCondensed.sfd.norm
+	cp $(TMPDIR)/Brutalist-Bold.sfd.norm.narrow.norm $(TMPDIR)/BrutalistCondensed-Bold.sfd.norm
+	cp $(TMPDIR)/Brutalist-Oblique.sfd.norm.narrow.norm $(TMPDIR)/BrutalistCondensed-Oblique.sfd.norm
+	cp $(TMPDIR)/Brutalist-BoldOblique.sfd.norm.narrow.norm $(TMPDIR)/BrutalistCondensed-BoldOblique.sfd.norm
+	cp $(TMPDIR)/BrutalistSerif.sfd.norm.narrow.norm $(TMPDIR)/BrutalistSerifCondensed.sfd.norm
+	cp $(TMPDIR)/BrutalistSerif-Bold.sfd.norm.narrow.norm $(TMPDIR)/BrutalistSerifCondensed-Bold.sfd.norm
+	cp $(TMPDIR)/BrutalistSerif-Italic.sfd.norm.narrow.norm $(TMPDIR)/BrutalistSerifCondensed-Italic.sfd.norm
+	cp $(TMPDIR)/BrutalistSerif-BoldItalic.sfd.norm.narrow.norm $(TMPDIR)/BrutalistSerifCondensed-BoldItalic.sfd.norm

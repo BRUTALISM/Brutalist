@@ -147,7 +147,7 @@ sub parse_sfd_file($) {
 # TODO: formats would be better
 sub print_coverage() {
   print <<END;
-This is the Unicode coverage file for DejaVu fonts
+This is the Unicode coverage file for Brutalist fonts
 (\$Id\$)
 
 Control and similar characters are discounted from totals.
