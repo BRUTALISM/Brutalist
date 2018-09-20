@@ -1,74 +1,53 @@
 [![Build Status](https://travis-ci.org/dejavu-fonts/dejavu-fonts.svg)](https://travis-ci.org/dejavu-fonts/dejavu-fonts)
 
-DejaVu fonts 2.37 (c)2004-2016 DejaVu fonts team
-------------------------------------------------
+# Brutalist Mono
 
-The DejaVu fonts are a font family based upon
-[Bitstream Vera](http://gnome.org/fonts/) v1.10.
-Its purpose is to provide a wider range of characters
-while maintaining the original look-and-feel.
+Brutalist Mono is a very simple modification on top of DejaVu Sans Mono, making it more suitable for coding. The changes are very nitpicky and you can probably just move along.
 
-See [`status.txt`](./status.txt) for more information.
+## Motivation
 
+Another DejaVu Sans Mono / Bitstream Vera Mono clone? Yes. But this one is opinionated:
 
-### Available fonts
-(Sans = sans serif, Mono = monospaced):
+1. I don't care about "readability on small font sizes". Make your font larger and/or get a decent monitor. It's the 21st century.
+2. I don't care about font hinting. Modern monitors are high-DPI. If you care about font hinting, try some other DejaVu mod.
+3. I don't care about `O0`, `lI1|`, or any of that crap. It's good enough. See point #1.
 
-* DejaVu Sans Mono
-* DejaVu Sans Mono Bold
-* DejaVu Sans Mono Bold Oblique
-* DejaVu Sans Mono Oblique
-* DejaVu Sans
-* DejaVu Sans Bold
-* DejaVu Sans Bold Oblique
-* DejaVu Sans Oblique
-* DejaVu Sans ExtraLight             _(experimental)_
-* DejaVu Sans Condensed              _(experimental)_
-* DejaVu Sans Condensed Bold         _(experimental)_
-* DejaVu Sans Condensed Bold Oblique _(experimental)_
-* DejaVu Sans Condensed Oblique      _(experimental)_
-* DejaVu Serif
-* DejaVu Serif Bold
-* DejaVu Serif Bold Italic           _(experimental)_
-* DejaVu Serif Italic                _(experimental)_
-* DejaVu Serif Condensed             _(experimental)_
-* DejaVu Serif Condensed Bold        _(experimental)_
-* DejaVu Serif Condensed Bold Italic _(experimental)_
-* DejaVu Serif Condensed Italic      _(experimental)_
-* DejaVu Math TeX Gyre
+### Why not Hack?
 
-### Variants and subsets
-All fonts are also available as subset forms called **DejaVu LGC**,
-which include only the Latin, Greek and Cyrillic scripts.
+Hack is great, but has way too many unnecessary modifications on top of the baseline DejaVu Sans Mono:
 
-For license information, see [`LICENSE`](./LICENSE).
-Latest changes are described in [`NEWS`](./NEWS).
-All authors are credited  in [`AUTHORS`](./AUTHORS).
+* the parentheses are unnecessarily spread out in earlier versions, and just too rounded in newer ones
+* the `1` has an awkward downward facing arm
+* contributing is hard if you're using just plain old FontForge (I don't want to shell out EUR 250 for Glyphs.app)
+* [alt-hack](https://github.com/source-foundry/alt-hack) is great but I ended up using it to just revert most mods back to DejaVu style, so I figured why bother
 
-Fonts are published in source form as SFD files
-(Spline Font Database from [FontForge](https://fontforge.github.io/))
-and in compiled form as TTF files (TrueType fonts).
+### Why not Menlo?
 
-For more information, visit [dejavu-fonts.github.io](https://dejavu-fonts.github.io/).
+* the uppercase `N` is hideously wide (once you see it, you can not unsee it)
+* punctuation is unnecessarily exaggerated
 
+### Why not DejaVu Sans Mono?
 
-Characters from Arev fonts
---------------------------
-__Copyright (c) 2006 by Tavmjong Bah__
+This typeface is almost perfect, except:
 
-    U+01BA, U+01BF, U+01F7, U+021C-U+021D, U+0220, U+0222-U+0223,
-    U+02B9, U+02BA, U+02BD, U+02C2-U+02C5, U+02d4-U+02D5,
-    U+02D7, U+02EC-U+02EE, U+0346-U+034E, U+0360, U+0362,
-    U+03E2-03EF, U+0460-0463, U+0466-U+0486, U+0488-U+0489, U+04A8-U+04A9,
-    U+0500-U+050F, U+2055-205E, U+20B0, U+20B2-U+20B3, U+2102, U+210D, U+210F,
-    U+2111, U+2113, U+2115, U+2118-U+211A, U+211C-U+211D, U+2124, U+2135,
-    U+213C-U+2140, U+2295-U+2298, U+2308-U+230B, U+26A2-U+26B1, U+2701-U+2704,
-    U+2706-U+2709, U+270C-U+274B, U+2758-U+275A, U+2761-U+2775, U+2780-U+2794,
-    U+2798-U+27AF, U+27B1-U+27BE, U+FB05-U+FB06
+* the underscore is ridiculously thin, making it visually odd when reading `THINGS_WITH_MANY_UNDERSCORES` et al.
+* the lowercase `r` is offset a bit to the right (Hack has this right – once you see it, you can not unsee it)
+* the `-` glyph is ridiculously narrow
+* that dotted zero always looked a bit off
 
-DejaVu Math TeX Gyre
---------------------
-TeX Gyre DJV Math by B. Jackowski, P. Strzelczyk and P. Pianowski
-(on behalf of TeX users groups).
+## Changes from DejaVu Sans Mono
 
-<!-- $Id$ -->
+TODO
+
+## Building
+
+Short version:
+
+* Edit the .sdf files with FontForge
+* `make`
+
+This will probably fail, so: [long version](BUILDING.md).
+
+## License
+
+Same as DejaVu fonts, see [LICENSE](LICENSE).
