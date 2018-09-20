@@ -50,53 +50,11 @@ To build these fonts, you will need:
 
 ### Generating TrueType files
 
-To generate each font without subsetting:
+To generate all fonts:
 
 ~~~console
-$ make  full-ttf
+$ make
 ~~~
-
-To generate each font with only a specific subset of glyphs:
-~~~console
-$ make  lgc-ttf    # LGC (Latin-Greek-Cyrillic) subset
-$ make  sans-ttf   # Generate DejaVuSans only (no serif fonts)
-~~~
-
-
-### Building from source
-
-To generate each TTF file from its source data:
-
-1. Download a copy of the latest Unicode annexes to this project's
-   [`resources`](./resources) directory:
-
-   ~~~shell
-   wget -P resources \
-       http://www.unicode.org/Public/UNIDATA/UnicodeData.txt \
-       http://www.unicode.org/Public/UNIDATA/Blocks.txt
-   ~~~~
-
-2. Checkout the current fc-lang orthographies from the
-   [`fontconfig`][8] repository:
-
-   ~~~shell
-   git clone \
-     git://anongit.freedesktop.org/git/fontconfig \
-     ~/repos/fontconfig
-   ~~~
-
-3. Symlink to the appropriate folder:
-
-   ~~~shell
-   ln -s ~/repos/fontconfig/fc-lang resources/fc-lang
-   ~~~
-
-4. Finally, run `make` with its default target (without any arguments):
-
-   ~~~shell
-   make
-   ~~~
-
 
 [1]: https://fontforge.github.io/en-US/
 [2]: https://brew.sh/
