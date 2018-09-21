@@ -1,12 +1,12 @@
 # Brutalist Mono
 
-Brutalist Mono is a very simple modification on top of DejaVu Sans Mono, making it more suitable for coding. The changes are very nitpicky and you can probably just move along.
+Brutalist Mono is a very simple modification on top of DejaVu Sans Mono (yes, _another one_), making it more suitable for coding. The changes are very nitpicky and you can probably just move along.
 
 ## Changes from DejaVu Sans Mono
 
 * moved lowercase `r` a little bit to the left
-* increased underscore height
-* made minus sign wider
+* increased underscore height, reduced its width
+* made the minus sign wider
 * slashed instead of dotted zero
 
 ## Motivation
@@ -14,7 +14,7 @@ Brutalist Mono is a very simple modification on top of DejaVu Sans Mono, making 
 Another DejaVu Sans Mono / Bitstream Vera Mono clone? Yes. But this one is opinionated:
 
 1. I don't care about "readability on small font sizes". Make your font larger and/or get a decent monitor. It's the 21st century.
-2. I don't care about font hinting. Modern monitors are high-DPI. If you care about font hinting, try some other DejaVu mod.
+2. I don't care about font hinting. Modern monitors are high-DPI.
 3. I don't care about `O0`, `lI1|`, or any of that crap. It's good enough. See point #1.
 
 If any of this bothers you, try [Hack](https://github.com/source-foundry/Hack). It's awesome.
@@ -25,8 +25,8 @@ Hack is great, but has way too many unnecessary modifications on top of the base
 
 * the parentheses are unnecessarily spread out in earlier versions, and too rounded in newer ones
 * the `1` has an awkward downward facing arm
-* contributing is hard if you're only using plain old FontForge (I don't want to shell out EUR 250 for Glyphs.app)
-* [alt-hack](https://github.com/source-foundry/alt-hack) is great but I ended up just using it to revert most mods back to the original DejaVu style, so I figured why bother
+* contributing is complicated if you're only using plain old FontForge (I don't want to shell out EUR 250 for Glyphs.app)
+* [alt-hack](https://github.com/source-foundry/alt-hack) is great but I ended up just using it to revert most mods back to the original DejaVu style, so I figured why bother?
 
 ### Why not Menlo?
 
@@ -38,8 +38,8 @@ Hack is great, but has way too many unnecessary modifications on top of the base
 
 This typeface is almost perfect for programming, except:
 
-* the underscore is ridiculously thin, making it visually odd when reading `THINGS_WITH_MANY_UNDERSCORES` et al.
-* the lowercase `r` is offset a bit to the right (Hack has this right – once you see it, you can not unsee it)
+* the underscore is ridiculously thin, making it visually odd when reading `THINGS_WITH_MANY_UNDERSCORES` and esoteric C/C++ identifiers with `__multiple__underscores__`
+* the lowercase `r` is offset a bit to the right (Hack has got this right – once you see it, you can not unsee it)
 * the `-` glyph is ridiculously narrow
 
 ## Building
