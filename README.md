@@ -7,6 +7,7 @@ Brutalist Mono is a very simple modification on top of DejaVu Sans Mono, making 
 * moved lowercase `r` a little bit to the left
 * increased underscore height
 * made minus sign wider
+* slashed instead of dotted zero
 
 ## Motivation
 
@@ -22,7 +23,7 @@ If any of this bothers you, try [Hack](https://github.com/source-foundry/Hack). 
 
 Hack is great, but has way too many unnecessary modifications on top of the baseline DejaVu Sans Mono:
 
-* the parentheses are unnecessarily spread out in earlier versions, and just too rounded in newer ones
+* the parentheses are unnecessarily spread out in earlier versions, and too rounded in newer ones
 * the `1` has an awkward downward facing arm
 * contributing is hard if you're only using plain old FontForge (I don't want to shell out EUR 250 for Glyphs.app)
 * [alt-hack](https://github.com/source-foundry/alt-hack) is great but I ended up just using it to revert most mods back to the original DejaVu style, so I figured why bother
@@ -31,7 +32,7 @@ Hack is great, but has way too many unnecessary modifications on top of the base
 
 * the uppercase `N` is hideously wide (once you see it, you can not unsee it)
 * punctuation is unnecessarily exaggerated
-* there are [many weird tweaks](http://leancrew.com/all-this/2009/10/the-compleat-menlovera-sans-comparison/) done to it (relative to DejaVu) to make it render better on ancient Mac OS versions with low-DPI monitors, which disqualifies it immediately (see point #1 in "Motivation" above)
+* there are [many weird tweaks](http://leancrew.com/all-this/2009/10/the-compleat-menlovera-sans-comparison/) done to it (relative to its parent Bitstream Vera Sans Mono) to make it render better on ancient Mac OS versions with low-DPI monitors, which disqualifies it immediately (see point #1 in "Motivation" above)
 
 ### Why not DejaVu Sans Mono?
 
