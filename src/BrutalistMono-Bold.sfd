@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1537463587
-ModificationTime: 1537539632
+ModificationTime: 1537540702
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -1712,7 +1712,7 @@ NameList: AGL without afii
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 58 29 19
+WinInfo: 0 29 19
 GridOrder2: 1
 Grid
 1 740 m 25,0,-1
@@ -2898,7 +2898,7 @@ SplineSet
 735 1192 m 1,0,-1
  735 762 l 1,1,-1
  1165 762 l 1,2,-1
- 1165 524 l 1,3,-1
+ 1165 524 l 5,3,-1
  735 524 l 1,4,-1
  735 92 l 1,5,-1
  498 92 l 1,6,-1
@@ -2956,7 +2956,7 @@ EndChar
 StartChar: hyphen
 Encoding: 45 45 14
 Width: 1233
-Flags: W
+Flags: WO
 TtInstrs:
 PUSHB_6
  0
@@ -2978,11 +2978,11 @@ EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
-301 735 m 1,0,-1
- 932 735 l 1,1,-1
- 932 444 l 1,2,-1
- 301 444 l 1,3,-1
- 301 735 l 1,0,-1
+146 762 m 1,0,-1
+ 1085 762 l 5,1,-1
+ 1085 524 l 5,2,-1
+ 146 524 l 1,3,-1
+ 146 762 l 1,0,-1
 EndSplineSet
 EndChar
 
@@ -7784,7 +7784,7 @@ EndChar
 StartChar: underscore
 Encoding: 95 95 64
 Width: 1233
-Flags: WO
+Flags: W
 TtInstrs:
 PUSHB_6
  0

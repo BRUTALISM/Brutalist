@@ -6,6 +6,7 @@ Brutalist Mono is a very simple modification on top of DejaVu Sans Mono, making 
 
 * moved lowercase `r` a little bit to the left
 * increased underscore height
+* made minus sign wider
 
 ## Motivation
 
