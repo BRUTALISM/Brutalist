@@ -2,6 +2,10 @@
 
 Brutalist Mono is a very simple modification on top of DejaVu Sans Mono, making it more suitable for coding. The changes are very nitpicky and you can probably just move along.
 
+## Changes from DejaVu Sans Mono
+
+* moved lowercase `r` a little bit to the left
+
 ## Motivation
 
 Another DejaVu Sans Mono / Bitstream Vera Mono clone? Yes. But this one is opinionated:
@@ -34,10 +38,6 @@ This typeface is almost perfect for programming, except:
 * the underscore is ridiculously thin, making it visually odd when reading `THINGS_WITH_MANY_UNDERSCORES` et al.
 * the lowercase `r` is offset a bit to the right (Hack has this right – once you see it, you can not unsee it)
 * the `-` glyph is ridiculously narrow
-
-## Changes from DejaVu Sans Mono
-
-TODO
 
 ## Building
 
