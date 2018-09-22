@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1537463587
-ModificationTime: 1537631094
+ModificationTime: 1537631805
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -9209,11 +9209,11 @@ SplineSet
  543 977 l 1,8,-1
  256 977 l 1,9,-1
  256 1120 l 1,0,-1
-543 1556 m 1,10,-1
+494 1556 m 1,10,-1
  727 1556 l 1,11,-1
  727 1323 l 1,12,-1
- 543 1323 l 1,13,-1
- 543 1556 l 1,10,-1
+ 494 1323 l 1,13,-1
+ 494 1556 l 1,10,-1
 EndSplineSet
 Substitution2: "Single Substitution - Dotless Form" dotlessi
 EndChar
@@ -9221,7 +9221,7 @@ EndChar
 StartChar: j
 Encoding: 106 106 75
 Width: 1233
-Flags: W
+Flags: WO
 TtInstrs:
 NPUSHB
  29
@@ -9298,11 +9298,11 @@ SplineSet
  420 -270 l 2,11,12
  510 -270 510 -270 555 -207.5 c 128,-1,13
  600 -145 600 -145 600 -20 c 2,0,-1
-600 1556 m 1,14,-1
+551 1556 m 1,14,-1
  784 1556 l 1,15,-1
  784 1323 l 1,16,-1
- 600 1323 l 1,17,-1
- 600 1556 l 1,14,-1
+ 551 1323 l 1,17,-1
+ 551 1556 l 1,14,-1
 EndSplineSet
 Substitution2: "Single Substitution - Dotless Form" dotlessj
 EndChar
@@ -9535,7 +9535,7 @@ EndChar
 StartChar: l
 Encoding: 108 108 77
 Width: 1233
-Flags: WO
+Flags: W
 TtInstrs:
 NPUSHB
  19

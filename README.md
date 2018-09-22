@@ -9,6 +9,7 @@ Brutalist Mono is a very simple modification on top of DejaVu Sans Mono (yes, _a
 * made the minus sign wider
 * slashed instead of dotted zero
 * slightly increased upper arm and recentered lowercase `l`
+* slightly increased dot sizes on lowercase `i` and `j`, making them square
 
 ## Motivation
 

@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1537463587
-ModificationTime: 1537631159
+ModificationTime: 1537631892
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -8458,18 +8458,18 @@ SplineSet
  508 895 l 1,8,-1
  221 895 l 1,9,-1
  221 1120 l 1,0,-1
-508 1665 m 1,10,-1
+459 1665 m 1,10,-1
  801 1665 l 1,11,-1
  801 1323 l 1,12,-1
- 508 1323 l 1,13,-1
- 508 1665 l 1,10,-1
+ 459 1323 l 1,13,-1
+ 459 1665 l 1,10,-1
 EndSplineSet
 EndChar
 
 StartChar: j
 Encoding: 106 106 75
 Width: 1233
-Flags: W
+Flags: WO
 TtInstrs:
 NPUSHB
  28
@@ -8532,7 +8532,7 @@ LayerCount: 2
 Fore
 SplineSet
 850 43 m 2,0,1
- 850 -209 850 -209 759.5 -316.5 c 132,-1,2
+ 850 -209 850 -209 759.5 -316.5 c 128,-1,2
  669 -424 669 -424 459 -424 c 2,3,-1
  143 -424 l 1,4,-1
  143 -199 l 1,5,-1
@@ -8545,8 +8545,8 @@ SplineSet
  850 1120 l 1,13,-1
  850 43 l 2,0,1
 850 1323 m 1,14,-1
- 557 1323 l 1,15,-1
- 557 1665 l 1,16,-1
+ 508 1323 l 5,15,-1
+ 508 1665 l 5,16,-1
  850 1665 l 1,17,-1
  850 1323 l 1,14,-1
 EndSplineSet
@@ -8646,7 +8646,7 @@ EndChar
 StartChar: l
 Encoding: 108 108 77
 Width: 1233
-Flags: WO
+Flags: W
 TtInstrs:
 NPUSHB
  18

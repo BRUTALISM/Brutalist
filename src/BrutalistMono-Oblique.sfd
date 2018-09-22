@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1537463587
-ModificationTime: 1537631242
+ModificationTime: 1537631913
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -10313,18 +10313,18 @@ SplineSet
  616 977 l 1,8,-1
  330 977 l 1,9,-1
  358 1120 l 1,0,-1
-729 1556 m 1,10,-1
+680 1556 m 1,10,-1
  913 1556 l 1,11,-1
  868 1323 l 1,12,-1
- 684 1323 l 1,13,-1
- 729 1556 l 1,10,-1
+ 635 1323 l 1,13,-1
+ 680 1556 l 1,10,-1
 EndSplineSet
 EndChar
 
 StartChar: j
 Encoding: 106 106 75
 Width: 1233
-Flags: W
+Flags: WO
 TtInstrs:
 NPUSHB
  64
@@ -10457,11 +10457,11 @@ SplineSet
  268 -270 l 2,11,12
  363 -270 363 -270 418 -210.5 c 128,-1,13
  473 -151 473 -151 498 -20 c 1,0,-1
-803 1556 m 1,14,-1
+754 1556 m 1,14,-1
  987 1556 l 1,15,-1
  942 1323 l 1,16,-1
- 758 1323 l 1,17,-1
- 803 1556 l 1,14,-1
+ 709 1323 l 1,17,-1
+ 754 1556 l 1,14,-1
 EndSplineSet
 EndChar
 
@@ -11169,7 +11169,7 @@ EndChar
 StartChar: o
 Encoding: 111 111 80
 Width: 1233
-Flags: WO
+Flags: W
 TtInstrs:
 NPUSHB
  17
