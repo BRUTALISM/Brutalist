@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1537463587
-ModificationTime: 1537541048
+ModificationTime: 1537631159
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -1712,7 +1712,7 @@ NameList: AGL without afii
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 0 29 19
+WinInfo: 58 29 19
 GridOrder2: 1
 Grid
 1 740 m 25,0,-1
@@ -3061,7 +3061,7 @@ EndChar
 StartChar: zero
 Encoding: 48 48 17
 Width: 1233
-Flags: WO
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -8646,7 +8646,7 @@ EndChar
 StartChar: l
 Encoding: 108 108 77
 Width: 1233
-Flags: W
+Flags: WO
 TtInstrs:
 NPUSHB
  18
@@ -8686,24 +8686,24 @@ IP
 IP
 IUP[y]
 EndTTInstrs
-AnchorPoint: "above" 562 1556 basechar 0
-AnchorPoint: "below" 562 0 basechar 0
+AnchorPoint: "above" 602 1556 basechar 0
+AnchorPoint: "below" 602 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-387 467 m 2,0,-1
- 387 1331 l 1,1,-1
- 90 1331 l 1,2,-1
- 90 1556 l 1,3,-1
- 680 1556 l 1,4,-1
- 680 467 l 2,5,6
- 680 335 680 335 721 280 c 128,-1,7
- 762 225 762 225 860 225 c 2,8,-1
- 1094 225 l 1,9,-1
- 1094 0 l 1,10,-1
- 778 0 l 2,11,12
- 569 0 569 0 478 108 c 128,-1,13
- 387 216 387 216 387 467 c 2,0,-1
+427 467 m 6,0,-1
+ 427 1331 l 5,1,-1
+ 80 1331 l 5,2,-1
+ 80 1556 l 5,3,-1
+ 720 1556 l 5,4,-1
+ 720 467 l 6,5,6
+ 720 335 720 335 761 280 c 132,-1,7
+ 802 225 802 225 900 225 c 6,8,-1
+ 1134 225 l 5,9,-1
+ 1134 0 l 5,10,-1
+ 818 0 l 6,11,12
+ 609 0 609 0 518 108 c 132,-1,13
+ 427 216 427 216 427 467 c 6,0,-1
 EndSplineSet
 EndChar
 
