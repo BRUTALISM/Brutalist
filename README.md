@@ -4,12 +4,17 @@ Brutalist Mono is a very simple modification on top of DejaVu Sans Mono (yes, _a
 
 ## Changes from DejaVu Sans Mono
 
-* lowercase `r` a little bit to the left
-* increased underscore height, reduced its width
-* made the minus sign wider
-* slashed instead of dotted zero
-* slightly increased upper arm and recentered lowercase `l`
-* slightly increased dot sizes on lowercase `i` and `j`, making them square
+v1.0:
+
+* offset lowercase `r` a little bit to the left
+* increase height, reduce width on underscore
+* make the minus sign wider
+* add slashed instead of dotted zero
+
+v1.1:
+
+* increase upper arm and recenter lowercase `l`
+* increase dot sizes on lowercase `i` and `j`, making them square
 
 ## Motivation
 
@@ -23,7 +28,7 @@ If any of this bothers you, try [Hack](https://github.com/source-foundry/Hack). 
 
 ### Why not Hack?
 
-Hack is great, but has way too many unnecessary modifications on top of the baseline DejaVu Sans Mono:
+Hack is great, but has way too many unnecessary modifications on top of the baseline DejaVu Sans Mono. To name a few:
 
 * the parentheses are unnecessarily spread out in earlier versions, and too rounded in newer ones
 * the `1` has an awkward downward facing arm
