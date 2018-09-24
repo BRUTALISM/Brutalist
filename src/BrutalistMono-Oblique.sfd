@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1537463587
-ModificationTime: 1537631913
+ModificationTime: 1537779354
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -10324,7 +10324,7 @@ EndChar
 StartChar: j
 Encoding: 106 106 75
 Width: 1233
-Flags: WO
+Flags: W
 TtInstrs:
 NPUSHB
  64
@@ -10616,122 +10616,19 @@ EndChar
 StartChar: l
 Encoding: 108 108 77
 Width: 1233
-Flags: W
-TtInstrs:
-NPUSHB
- 47
- 6
- 5
- 4
- 3
- 2
- 1
- 6
- 7
- 0
- 5
- 15
- 16
- 15
- 19
- 5
- 16
- 16
- 15
- 58
- 0
- 15
- 6
- 16
- 137
- 18
- 143
- 6
- 137
- 8
- 17
- 18
- 20
- 0
- 15
- 12
- 19
- 8
- 7
- 3
- 12
- 6
- 9
- 7
- 16
- 16
- 12
- 20
-SRP0
-MDRP[rp0,rnd,grey]
-MDRP[rnd,grey]
-SRP0
-MDRP[grey]
-MDRP[grey]
-MDRP[grey]
-SRP2
-IP
-SRP2
-IP
-IP
-SRP2
-IP
-IP
-SRP1
-IP
-IP
-IUP[x]
-SVTCA[y-axis]
-MDAP[rnd]
-MIRP[min,rnd,grey]
-MIRP[rp0,min,rnd,grey]
-MIRP[min,rnd,grey]
-SRP1
-IP
-IP
-IUP[y]
-MPPEM
-GTEQ
-IF
-SPVTL[orthog]
-SRP0
-SFVTCA[x-axis]
-MIRP[min,rnd,black]
-SPVTL[orthog]
-SRP0
-SFVTCA[x-axis]
-MIRP[min,rnd,black]
-SRP1
-SLOOP
-IP
-EIF
-CLEAR
-EndTTInstrs
+Flags: WO
 LayerCount: 2
 Fore
 SplineSet
-630 408 m 5,0,1
- 623 373 623 373 619.5 346 c 132,-1,2
- 616 319 616 319 616 301 c 4,3,4
- 616 228 616 228 660.5 192 c 132,-1,5
- 705 156 705 156 796 156 c 6,6,-1
- 1007 156 l 5,7,-1
- 976 0 l 5,8,-1
- 769 0 l 6,9,10
- 596 0 596 0 511.5 63.5 c 132,-1,11
- 427 127 427 127 427 258 c 4,12,13
- 427 286 427 286 432 326 c 132,-1,14
- 437 366 437 366 446 412 c 5,15,-1
- 657 1423 l 5,16,-1
- 291 1423 l 5,17,-1
- 320 1567 l 5,18,-1
- 870 1567 l 5,19,-1
- 630 408 l 5,0,1
+630 408 m 6,0,1
+ 554 42 554 42 1007 156 c 1,2,-1
+ 976 0 l 17,3,4
+ 327 -156 327 -156 446 412 c 10,5,-1
+ 657 1423 l 1,6,-1
+ 291 1423 l 1,7,-1
+ 320 1567 l 1,8,-1
+ 870 1567 l 1,9,-1
+ 630 408 l 6,0,1
 EndSplineSet
 EndChar
 
