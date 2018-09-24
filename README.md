@@ -21,6 +21,7 @@ Next release:
 * lowercase `l` – drop foot below the baseline
 * uppercase `C` – flatter terminals
 * uppercase `G` – flatter upper terminal
+* uppercase `J` – flatter lower terminal
 
 ## Motivation
 
