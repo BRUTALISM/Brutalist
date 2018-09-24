@@ -30,6 +30,7 @@ Next release:
 * lowercase `s` – flatter terminals
 * `2` – flatter top terminal
 * `3` – flatter terminals
+* `5` – flatter bottom terminal and mid stroke
 
 ## Motivation
 
