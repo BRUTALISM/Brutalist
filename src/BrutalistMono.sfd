@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1537463587
-ModificationTime: 1537782196
+ModificationTime: 1537782476
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -5881,7 +5881,7 @@ EndChar
 StartChar: J
 Encoding: 74 74 43
 Width: 1233
-Flags: WO
+Flags: W
 AnchorPoint: "cedilla" 666 0 basechar 0
 AnchorPoint: "above" 666 1493 basechar 0
 AnchorPoint: "below" 666 0 basechar 0
@@ -8185,119 +8185,7 @@ EndChar
 StartChar: a
 Encoding: 97 97 66
 Width: 1233
-Flags: W
-TtInstrs:
-NPUSHB
- 42
- 10
- 7
- 0
- 26
- 32
- 12
- 24
- 15
- 7
- 0
- 182
- 24
- 7
- 140
- 18
- 33
- 139
- 32
- 191
- 29
- 140
- 36
- 190
- 18
- 153
- 24
- 13
- 1
- 24
- 4
- 25
- 14
- 10
- 6
- 12
- 68
- 32
- 4
- 6
- 21
- 62
- 42
-SRP0
-MIRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-MDRP[rnd,grey]
-MIRP[rp0,min,rnd,grey]
-MIRP[min,rnd,grey]
-SHP[rp2]
-SHP[rp2]
-SRP1
-IP
-IP
-IUP[x]
-SVTCA[y-axis]
-MDAP[rnd]
-MDRP[rnd,grey]
-MIRP[rnd,grey]
-MIRP[rp0,rnd,grey]
-MIRP[rp0,min,rnd,grey]
-MIRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-SRP0
-MIRP[min,rnd,white]
-SRP0
-MIRP[min,rnd,white]
-SRP1
-IP
-SRP1
-IP
-SRP2
-IP
-SRP1
-SRP2
-IP
-IUP[y]
-NPUSHB
- 29
- 48
- 31
- 48
- 32
- 48
- 33
- 48
- 34
- 160
- 0
- 160
- 1
- 160
- 2
- 160
- 10
- 160
- 11
- 162
- 22
- 160
- 23
- 160
- 24
- 160
- 25
- 160
- 26
- 14
-DELTAP1
-EndTTInstrs
+Flags: WO
 AnchorPoint: "cedilla" 966 0 basechar 0
 AnchorPoint: "below" 616 0 basechar 0
 AnchorPoint: "above" 616 1120 basechar 0
@@ -8326,10 +8214,9 @@ SplineSet
  384 707 384 707 627 707 c 2,24,-1
  874 707 l 1,25,-1
  874 736 l 1,26,27
- 873 870 873 870 806 930.5 c 128,-1,28
- 739 991 739 991 592 991 c 0,29,30
- 498 991 498 991 402 964 c 128,-1,31
- 306 937 306 937 215 885 c 1,32,-1
+ 873 870 873 870 806 930.5 c 0,28,29
+ 740 990 740 990 592 991 c 0,30,31
+ 419 991 419 991 261 929 c 5,32,-1
  215 1069 l 1,33,34
  317 1108 317 1108 410.5 1127.5 c 128,-1,35
  504 1147 504 1147 592 1147 c 0,36,37

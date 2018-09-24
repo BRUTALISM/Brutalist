@@ -22,6 +22,7 @@ Next release:
 * uppercase `C` – flatter terminals
 * uppercase `G` – flatter upper terminal
 * uppercase `J` – flatter lower terminal
+* lowercase `a` – flatter upper terminal
 
 ## Motivation
 

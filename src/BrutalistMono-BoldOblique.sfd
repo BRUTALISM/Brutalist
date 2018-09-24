@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1537463587
-ModificationTime: 1537782004
+ModificationTime: 1537782555
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -5471,7 +5471,7 @@ EndChar
 StartChar: J
 Encoding: 74 74 43
 Width: 1233
-Flags: WO
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -8259,259 +8259,7 @@ EndChar
 StartChar: a
 Encoding: 97 97 66
 Width: 1233
-Flags: W
-TtInstrs:
-NPUSHB
- 79
- 1
- 0
- 2
- 2
- 9
- 15
- 10
- 11
- 10
- 7
- 1
- 6
- 8
- 15
- 11
- 10
- 15
- 14
- 2
- 16
- 13
- 15
- 11
- 10
- 12
- 15
- 11
- 11
- 10
- 52
- 24
- 33
- 22
- 13
- 11
- 6
- 10
- 0
- 93
- 22
- 6
- 93
- 16
- 33
- 60
- 34
- 92
- 30
- 93
- 37
- 91
- 16
- 69
- 22
- 95
- 11
- 10
- 11
- 40
- 24
- 23
- 12
- 9
- 0
- 5
- 13
- 22
- 27
- 33
- 34
- 19
- 3
- 27
- 15
- 40
- 3
- 15
- 19
- 43
-SRP0
-MDRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-MDRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-SRP1
-SRP2
-IP
-IP
-SRP2
-IP
-IP
-SLOOP
-IP
-SRP1
-IP
-IP
-IUP[x]
-SVTCA[y-axis]
-MDAP[rnd]
-MIRP[rnd,grey]
-MIRP[rnd,grey]
-MIRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-MIRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-SRP0
-MIRP[min,rnd,white]
-SRP0
-MIRP[min,rnd,white]
-IP
-SRP1
-SRP2
-IP
-SRP1
-SRP2
-IP
-IUP[y]
-MPPEM
-GTEQ
-IF
-SPVTL[orthog]
-SRP0
-SFVTCA[x-axis]
-MIRP[min,rnd,black]
-SPVTL[orthog]
-SFVTCA[x-axis]
-MIRP[min,rnd,black]
-SRP1
-SLOOP
-IP
-SPVTL[orthog]
-SFVTCA[x-axis]
-MIRP[min,rnd,black]
-SRP1
-SLOOP
-IP
-SPVTL[orthog]
-SRP0
-SFVTCA[x-axis]
-MIRP[min,rnd,black]
-SRP1
-SLOOP
-IP
-EIF
-CLEAR
-SVTCA[x-axis]
-MPPEM
-PUSHB_1
- 12
-EQ
-MPPEM
-PUSHB_1
- 13
-EQ
-OR
-MPPEM
-PUSHB_1
- 14
-EQ
-OR
-MPPEM
-PUSHB_1
- 15
-EQ
-OR
-MPPEM
-PUSHB_1
- 16
-EQ
-OR
-MPPEM
-PUSHB_1
- 17
-EQ
-OR
-MPPEM
-PUSHB_1
- 19
-EQ
-OR
-IF
-PUSHW_6
- 43
- -64
- 1
- 43
- 43
- 64
-SHPIX
-SRP1
-SHZ[rp1]
-SHPIX
-EIF
-NPUSHB
- 50
- 51
- 32
- 48
- 33
- 48
- 34
- 51
- 35
- 118
- 21
- 118
- 22
- 133
- 21
- 134
- 22
- 160
- 0
- 160
- 1
- 160
- 9
- 160
- 21
- 160
- 22
- 160
- 23
- 14
- 16
- 2
- 16
- 3
- 16
- 4
- 120
- 2
- 166
- 0
- 166
- 1
- 166
- 9
- 166
- 21
- 166
- 22
- 166
- 23
- 10
-DELTAP1
-SVTCA[y-axis]
-DELTAP1
-EndTTInstrs
+Flags: WO
 LayerCount: 2
 Fore
 SplineSet
@@ -8537,10 +8285,9 @@ SplineSet
  852 786 l 2,24,25
  853 792 853 792 853.5 797.5 c 128,-1,26
  854 803 854 803 854 815 c 0,27,28
- 854 872 854 872 803 902 c 128,-1,29
- 752 932 752 932 655 932 c 0,30,31
- 573 932 573 932 469.5 903.5 c 128,-1,32
- 366 875 366 875 248 819 c 1,33,-1
+ 854 872 854 872 803 902 c 0,29,30
+ 753.183776023 931.303661163 753.183776023 931.303661163 655 932 c 4,31,32
+ 512 932 512 932 348 875 c 5,33,-1
  295 1069 l 1,34,35
  408 1108 408 1108 508.5 1127.5 c 128,-1,36
  609 1147 609 1147 700 1147 c 0,37,38
