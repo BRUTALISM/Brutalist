@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1537463587
-ModificationTime: 1537788134
+ModificationTime: 1537788363
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -3565,7 +3565,7 @@ EndChar
 StartChar: five
 Encoding: 53 53 22
 Width: 1233
-Flags: WO
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -3597,68 +3597,7 @@ EndChar
 StartChar: six
 Encoding: 54 54 23
 Width: 1233
-Flags: W
-TtInstrs:
-NPUSHB
- 32
- 9
- 99
- 31
- 3
- 99
- 19
- 22
- 114
- 16
- 13
- 87
- 12
- 98
- 16
- 99
- 40
- 97
- 31
- 101
- 43
- 19
- 6
- 0
- 13
- 12
- 0
- 19
- 25
- 6
- 19
- 34
- 43
-SRP0
-MDRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-MDRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-MDRP[grey]
-MDRP[grey]
-SRP1
-SRP2
-IP
-IUP[x]
-SVTCA[y-axis]
-SRP0
-MIRP[rnd,grey]
-MIRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-MIRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-SRP0
-MIRP[rp0,rnd,black]
-MDRP[rnd,white]
-MIRP[min,rnd,white]
-SRP0
-MIRP[min,rnd,white]
-IUP[y]
-EndTTInstrs
+Flags: WO
 LayerCount: 2
 Fore
 SplineSet
@@ -3672,10 +3611,9 @@ SplineSet
  666 129 666 129 763 263 c 128,-1,11
  860 397 860 397 860 594 c 0,0,1
 1128 1460 m 1,12,-1
- 1092 1274 l 1,13,14
- 1034 1311 1034 1311 966 1330.5 c 128,-1,15
- 898 1350 898 1350 823 1350 c 0,16,17
- 630 1350 630 1350 504.5 1206.5 c 128,-1,18
+ 1050 1314 l 1,13,14
+ 954 1350 954 1350 823 1350 c 0,15,16
+ 630.203328047 1350.23249063 630.203328047 1350.23249063 504.5 1206.5 c 0,17,18
  379 1063 379 1063 324 780 c 1,19,20
  392 882 392 882 485.5 934.5 c 128,-1,21
  579 987 579 987 692 987 c 0,22,23
@@ -3687,11 +3625,11 @@ SplineSet
  638 -29 638 -29 516 -29 c 0,31,32
  313 -29 313 -29 202.5 88 c 128,-1,33
  92 205 92 205 92 420 c 0,34,35
- 92 586 92 586 131 765 c 128,-1,36
- 170 944 170 944 238 1090 c 0,37,38
- 336 1305 336 1305 488.5 1412.5 c 128,-1,39
- 641 1520 641 1520 848 1520 c 0,40,41
- 923 1520 923 1520 994 1504.5 c 128,-1,42
+ 92 586 92 586 131 765 c 0,36,37
+ 169 938 169 938 238 1090 c 0,38,39
+ 336 1305 336 1305 488.5 1412.5 c 128,-1,40
+ 641 1520 641 1520 848 1520 c 0,41,42
+ 923 1520 923 1520 994 1504.5 c 128,-1,43
  1065 1489 1065 1489 1128 1460 c 1,12,-1
 EndSplineSet
 EndChar

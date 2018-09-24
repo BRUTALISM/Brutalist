@@ -31,6 +31,7 @@ Next release:
 * `2` – flatter top terminal
 * `3` – flatter terminals
 * `5` – flatter bottom terminal and mid stroke
+* `6` – flatter top terminal
 
 ## Motivation
 
