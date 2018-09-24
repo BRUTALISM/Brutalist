@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1537463587
-ModificationTime: 1537779354
+ModificationTime: 1537780823
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -1695,7 +1695,7 @@ NameList: AGL without afii
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 58 29 19
+WinInfo: 0 29 19
 GridOrder2: 1
 Grid
 1 740 m 25,0,-1
@@ -5267,59 +5267,7 @@ EndChar
 StartChar: C
 Encoding: 67 67 36
 Width: 1233
-Flags: W
-TtInstrs:
-NPUSHB
- 27
- 31
- 124
- 0
- 123
- 28
- 99
- 3
- 16
- 124
- 15
- 123
- 19
- 99
- 12
- 97
- 3
- 101
- 32
- 31
- 16
- 0
- 15
- 25
- 25
- 15
- 6
- 32
-SRP0
-MDRP[rp0,rnd,grey]
-MDRP[rnd,grey]
-MIRP[min,rnd,grey]
-SRP1
-IP
-IP
-IP
-IUP[x]
-SVTCA[y-axis]
-SRP0
-MIRP[rnd,grey]
-MIRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-MIRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-SRP0
-MIRP[min,rnd,white]
-MIRP[rp0,rnd,white]
-MIRP[min,rnd,white]
-IUP[y]
-EndTTInstrs
+Flags: WO
 LayerCount: 2
 Fore
 SplineSet
@@ -5334,17 +5282,15 @@ SplineSet
  734 1520 734 1520 899 1520 c 0,12,13
  979 1520 979 1520 1058 1499 c 128,-1,14
  1137 1478 1137 1478 1212 1438 c 1,15,-1
- 1171 1231 l 1,16,17
- 1107 1294 1107 1294 1036 1325 c 128,-1,18
- 965 1356 965 1356 885 1356 c 0,19,20
- 790 1356 790 1356 709 1315.5 c 128,-1,21
+ 1105 1311 l 1,16,17
+ 997 1355 997 1355 885 1356 c 0,18,19
+ 788.628596258 1355.81197686 788.628596258 1355.81197686 709 1315.5 c 0,20,21
  628 1275 628 1275 557 1192 c 0,22,23
  453 1069 453 1069 389.5 877 c 128,-1,24
  326 685 326 685 326 492 c 0,25,26
- 326 319 326 319 404 227 c 128,-1,27
- 482 135 482 135 629 135 c 0,28,29
- 714 135 714 135 804.5 167 c 128,-1,30
- 895 199 895 199 983 260 c 1,31,-1
+ 326 319 326 319 404 227 c 0,27,28
+ 483 134 483 134 629 135 c 0,29,30
+ 760 136 760 136 888 192 c 1,31,-1
  944 53 l 1,0,1
 EndSplineSet
 EndChar
@@ -10616,7 +10562,7 @@ EndChar
 StartChar: l
 Encoding: 108 108 77
 Width: 1233
-Flags: WO
+Flags: W
 LayerCount: 2
 Fore
 SplineSet

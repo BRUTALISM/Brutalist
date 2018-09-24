@@ -19,6 +19,7 @@ v1.1:
 Next release:
 
 * lowercase `l` – drop foot below the baseline
+* uppercase `C` – flatter terminals
 
 ## Motivation
 
