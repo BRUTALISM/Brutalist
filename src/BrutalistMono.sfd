@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1537463587
-ModificationTime: 1537783440
+ModificationTime: 1537784284
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -8316,7 +8316,7 @@ EndChar
 StartChar: c
 Encoding: 99 99 68
 Width: 1233
-Flags: WO
+Flags: W
 AnchorPoint: "cedilla" 720 0 basechar 0
 AnchorPoint: "above" 691 1120 basechar 0
 AnchorPoint: "below" 691 0 basechar 0
@@ -8430,78 +8430,7 @@ EndChar
 StartChar: e
 Encoding: 101 101 70
 Width: 1233
-Flags: W
-TtInstrs:
-NPUSHB
- 38
- 0
- 22
- 3
- 1
- 10
- 139
- 9
- 141
- 6
- 22
- 182
- 1
- 6
- 140
- 13
- 1
- 193
- 25
- 140
- 19
- 190
- 13
- 153
- 29
- 3
- 2
- 28
- 16
- 9
- 22
- 6
- 0
- 73
- 28
- 18
- 16
- 72
- 29
-SRP0
-MIRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-MIRP[rp0,min,rnd,grey]
-MIRP[min,rnd,grey]
-MDRP[rnd,grey]
-SRP1
-SRP2
-IP
-IP
-IUP[x]
-SVTCA[y-axis]
-SRP0
-MIRP[rnd,grey]
-MIRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-MIRP[rnd,grey]
-SRP0
-MIRP[min,rnd,white]
-SRP0
-MIRP[min,rnd,white]
-SRP0
-MIRP[rp0,rnd,grey]
-MIRP[min,rnd,white]
-SRP2
-IP
-SRP1
-IP
-IUP[y]
-EndTTInstrs
+Flags: WO
 AnchorPoint: "cedilla" 630 0 basechar 0
 AnchorPoint: "above" 630 1120 basechar 0
 AnchorPoint: "below" 630 0 basechar 0
@@ -8513,24 +8442,23 @@ SplineSet
  315 516 l 1,2,-1
  315 510 l 2,3,4
  315 327 315 327 410.5 227 c 128,-1,5
- 506 127 506 127 680 127 c 0,6,7
- 768 127 768 127 864 155 c 128,-1,8
- 960 183 960 183 1069 240 c 1,9,-1
- 1069 57 l 1,10,11
- 964 14 964 14 866.5 -7.5 c 128,-1,12
- 769 -29 769 -29 678 -29 c 0,13,14
- 417 -29 417 -29 270 127.5 c 128,-1,15
- 123 284 123 284 123 559 c 0,16,17
- 123 827 123 827 267 987 c 128,-1,18
- 411 1147 411 1147 651 1147 c 0,19,20
- 865 1147 865 1147 988.5 1002 c 128,-1,21
+ 506 127 506 127 684 127 c 132,-1,6
+ 862 127 862 127 1025 185 c 1,7,-1
+ 1069 57 l 1,8,9
+ 964 14 964 14 866.5 -7.5 c 128,-1,10
+ 769 -29 769 -29 678 -29 c 0,11,12
+ 417 -29 417 -29 270 127.5 c 128,-1,13
+ 123 284 123 284 123 559 c 0,14,15
+ 123 827 123 827 267 987 c 128,-1,16
+ 411 1147 411 1147 651 1147 c 0,17,18
+ 865 1147 865 1147 988.5 1002 c 128,-1,19
  1112 857 1112 857 1112 606 c 2,0,-1
-928 660 m 1,22,23
- 924 822 924 822 851.5 906.5 c 128,-1,24
- 779 991 779 991 643 991 c 0,25,26
- 510 991 510 991 424 903 c 128,-1,27
- 338 815 338 815 322 659 c 1,28,-1
- 928 660 l 1,22,23
+928 660 m 1,20,21
+ 924 822 924 822 851.5 906.5 c 128,-1,22
+ 779 991 779 991 643 991 c 0,23,24
+ 510 991 510 991 424 903 c 128,-1,25
+ 338 815 338 815 322 659 c 1,26,-1
+ 928 660 l 1,20,21
 EndSplineSet
 EndChar
 
@@ -16040,15 +15968,6 @@ StartChar: edieresis
 Encoding: 235 235 171
 Width: 1233
 Flags: W
-TtInstrs:
-NPUSHB
- 3
- 64
- 29
- 1
-DELTAP1
-IUP[x]
-EndTTInstrs
 AnchorPoint: "below" 630 0 basechar 0
 AnchorPoint: "cedilla" 630 0 basechar 0
 LayerCount: 2

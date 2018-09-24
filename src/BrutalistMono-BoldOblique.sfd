@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1537463587
-ModificationTime: 1537783867
+ModificationTime: 1537784422
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -8512,7 +8512,7 @@ EndChar
 StartChar: c
 Encoding: 99 99 68
 Width: 1233
-Flags: WO
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -8750,122 +8750,7 @@ EndChar
 StartChar: e
 Encoding: 101 101 70
 Width: 1233
-Flags: W
-TtInstrs:
-NPUSHB
- 35
- 28
- 96
- 0
- 29
- 100
- 18
- 25
- 60
- 0
- 75
- 3
- 18
- 99
- 35
- 60
- 12
- 91
- 3
- 69
- 39
- 38
- 29
- 19
- 3
- 22
- 18
- 28
- 0
- 32
- 3
- 15
- 22
- 15
- 6
- 39
-SRP0
-MDRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-MDRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-IP
-IP
-IP
-SRP1
-SLOOP
-IP
-IUP[x]
-SVTCA[y-axis]
-SRP0
-MIRP[rnd,grey]
-MIRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-MIRP[min,rnd,grey]
-SRP0
-MIRP[rnd,white]
-MIRP[min,rnd,white]
-SRP0
-MIRP[min,rnd,white]
-SRP0
-MIRP[min,rnd,white]
-IUP[y]
-SVTCA[x-axis]
-MPPEM
-PUSHB_1
- 12
-EQ
-MPPEM
-PUSHB_1
- 13
-EQ
-OR
-IF
-PUSHW_6
- 39
- -64
- 1
- 39
- 39
- 64
-SHPIX
-SRP1
-SHZ[rp1]
-SHPIX
-EIF
-NPUSHB
- 23
- 207
- 15
- 207
- 16
- 207
- 17
- 207
- 18
- 207
- 19
- 207
- 20
- 207
- 29
- 207
- 30
- 207
- 31
- 207
- 32
- 207
- 38
- 11
-SVTCA[y-axis]
-DELTAP1
-EndTTInstrs
+Flags: WO
 LayerCount: 2
 Fore
 SplineSet
@@ -8885,10 +8770,9 @@ SplineSet
  369 465 l 1,19,20
  366 448 366 448 364.5 433 c 128,-1,21
  363 418 363 418 362 403 c 0,22,23
- 362 304 362 304 429 253.5 c 128,-1,24
- 496 203 496 203 627 203 c 0,25,26
- 735 203 735 203 843 234 c 128,-1,27
- 951 265 951 265 1044 324 c 1,28,-1
+ 362 304 362 304 429 253.5 c 0,24,25
+ 494.890672396 203.836134985 494.890672396 203.836134985 627 203 c 4,26,27
+ 788 203 788 203 932 254 c 5,28,-1
  993 55 l 1,0,1
 876 684 m 1,29,30
  880 698 880 698 881.5 711.5 c 128,-1,31

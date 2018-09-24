@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1537463587
-ModificationTime: 1537783668
+ModificationTime: 1537784219
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -7514,7 +7514,7 @@ EndChar
 StartChar: c
 Encoding: 99 99 68
 Width: 1233
-Flags: WO
+Flags: W
 AnchorPoint: "below" 691 0 basechar 0
 AnchorPoint: "above" 691 1120 basechar 0
 LayerCount: 2
@@ -7634,85 +7634,7 @@ EndChar
 StartChar: e
 Encoding: 101 101 70
 Width: 1233
-Flags: W
-TtInstrs:
-NPUSHB
- 35
- 12
- 21
- 13
- 20
- 139
- 0
- 21
- 143
- 13
- 17
- 104
- 0
- 121
- 3
- 13
- 142
- 24
- 104
- 9
- 137
- 3
- 114
- 28
- 21
- 22
- 0
- 12
- 46
- 14
- 22
- 27
- 22
- 6
- 41
- 28
-SRP0
-MIRP[rp0,min,rnd,grey]
-MIRP[min,rnd,grey]
-MIRP[min,rnd,grey]
-MIRP[rp0,min,rnd,grey]
-MDRP[rnd,grey]
-MIRP[min,rnd,grey]
-IUP[x]
-SVTCA[y-axis]
-SRP0
-MIRP[rnd,grey]
-MIRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-MIRP[min,rnd,grey]
-SRP0
-MIRP[rnd,white]
-MIRP[min,rnd,white]
-SRP0
-MIRP[min,rnd,white]
-SRP0
-MIRP[min,rnd,white]
-SRP1
-SRP2
-IP
-IUP[y]
-NPUSHB
- 11
- 207
- 12
- 207
- 13
- 207
- 14
- 207
- 21
- 207
- 27
- 5
-DELTAP1
-EndTTInstrs
+Flags: WO
 AnchorPoint: "below" 615 0 basechar 0
 AnchorPoint: "above" 615 1120 basechar 0
 LayerCount: 2
@@ -7731,15 +7653,14 @@ SplineSet
  390 465 l 1,14,15
  391 333 391 333 468 268 c 128,-1,16
  545 203 545 203 698 203 c 0,17,18
- 799 203 799 203 897 232 c 128,-1,19
- 995 261 995 261 1102 324 c 1,20,-1
+ 877 203 877 203 1041 253 c 5,19,-1
  1102 55 l 1,0,1
-854 685 m 1,21,22
- 852 801 852 801 794.5 860.5 c 128,-1,23
- 737 920 737 920 625 920 c 0,24,25
- 524 920 524 920 464 858.5 c 128,-1,26
- 404 797 404 797 393 684 c 1,27,-1
- 854 685 l 1,21,22
+854 685 m 1,20,21
+ 852 801 852 801 794.5 860.5 c 128,-1,22
+ 737 920 737 920 625 920 c 0,23,24
+ 524 920 524 920 464 858.5 c 128,-1,25
+ 404 797 404 797 393 684 c 1,26,-1
+ 854 685 l 1,20,21
 EndSplineSet
 EndChar
 
@@ -14720,17 +14641,6 @@ StartChar: ecircumflex
 Encoding: 234 234 170
 Width: 1233
 Flags: W
-TtInstrs:
-NPUSHB
- 5
- 63
- 28
- 47
- 28
- 2
-DELTAP1
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 Refer: 70 101 N 1 0 0 1 0 0 2
@@ -15970,17 +15880,6 @@ StartChar: ecaron
 Encoding: 283 283 219
 Width: 1233
 Flags: W
-TtInstrs:
-NPUSHB
- 5
- 63
- 28
- 47
- 28
- 2
-DELTAP1
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 Refer: 70 101 N 1 0 0 1 0 0 2
