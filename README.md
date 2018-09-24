@@ -22,6 +22,7 @@ Next release:
 * `C` – flatter terminals
 * `G` – flatter top terminal
 * `J` – flatter bottom terminal
+* `S` – flatter terminals
 * `a` – flatter top terminal
 * `c` – flatter terminals
 * `e` – flatter bottom terminal
