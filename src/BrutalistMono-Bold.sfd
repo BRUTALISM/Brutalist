@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1537463587
-ModificationTime: 1537780721
+ModificationTime: 1537781351
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -4819,7 +4819,7 @@ EndChar
 StartChar: C
 Encoding: 67 67 36
 Width: 1233
-Flags: WO
+Flags: W
 AnchorPoint: "below" 691 0 basechar 0
 AnchorPoint: "above" 691 1493 basechar 0
 LayerCount: 2
@@ -5049,92 +5049,7 @@ EndChar
 StartChar: G
 Encoding: 71 71 40
 Width: 1233
-Flags: W
-TtInstrs:
-NPUSHB
- 33
- 0
- 1
- 5
- 27
- 8
- 1
- 112
- 3
- 27
- 112
- 8
- 18
- 129
- 17
- 111
- 21
- 112
- 14
- 110
- 8
- 114
- 30
- 2
- 0
- 37
- 17
- 4
- 30
- 24
- 33
- 11
- 29
- 30
-SRP0
-MIRP[rp0,min,rnd,grey]
-MIRP[min,rnd,grey]
-MIRP[rp0,min,rnd,grey]
-MDRP[rnd,grey]
-MIRP[rp0,min,rnd,grey]
-MDRP[rnd,grey]
-IUP[x]
-SVTCA[y-axis]
-SRP0
-MIRP[rnd,grey]
-MIRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-MIRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-SRP0
-MIRP[rp0,min,rnd,white]
-MDRP[rp0,rnd,grey]
-MIRP[min,rnd,white]
-SRP1
-SRP2
-IP
-SRP1
-IP
-IUP[y]
-NPUSHB
- 18
- 31
- 2
- 31
- 3
- 143
- 2
- 143
- 3
- 4
- 15
- 1
- 15
- 2
- 15
- 3
- 15
- 4
- 4
-DELTAP1
-SVTCA[x-axis]
-DELTAP1
-EndTTInstrs
+Flags: WO
 AnchorPoint: "below" 666 0 basechar 0
 AnchorPoint: "above" 666 1493 basechar 0
 LayerCount: 2
@@ -5154,14 +5069,13 @@ SplineSet
  436 1520 436 1520 737 1520 c 0,14,15
  827 1520 827 1520 914 1494.5 c 128,-1,16
  1001 1469 1001 1469 1077 1421 c 1,17,-1
- 1077 1094 l 1,18,19
- 1015 1174 1015 1174 934.5 1214.5 c 128,-1,20
- 854 1255 854 1255 758 1255 c 0,21,22
- 590 1255 590 1255 507 1128.5 c 128,-1,23
- 424 1002 424 1002 424 745 c 0,24,25
- 424 496 424 496 504 366 c 128,-1,26
- 584 236 584 236 737 236 c 0,27,28
- 783 236 783 236 817 244.5 c 128,-1,29
+ 981 1202 l 1,18,19
+ 877 1255 877 1255 758 1255 c 0,20,21
+ 590 1255 590 1255 507 1128.5 c 128,-1,22
+ 424 1002 424 1002 424 745 c 0,23,24
+ 424 496 424 496 504 366 c 128,-1,25
+ 584 236 584 236 737 236 c 0,26,27
+ 783 236 783 236 817 244.5 c 128,-1,28
  851 253 851 253 872 270 c 1,0,-1
 EndSplineSet
 EndChar
