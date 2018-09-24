@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1537463587
-ModificationTime: 1537784375
+ModificationTime: 1537784648
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -8989,7 +8989,7 @@ EndChar
 StartChar: e
 Encoding: 101 101 70
 Width: 1233
-Flags: WO
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -9164,175 +9164,7 @@ EndChar
 StartChar: g
 Encoding: 103 103 72
 Width: 1233
-Flags: W
-TtInstrs:
-NPUSHB
- 91
- 8
- 7
- 6
- 3
- 9
- 5
- 5
- 46
- 15
- 46
- 1
- 2
- 3
- 3
- 0
- 4
- 5
- 15
- 46
- 31
- 30
- 2
- 32
- 29
- 5
- 15
- 46
- 26
- 27
- 2
- 25
- 28
- 5
- 15
- 15
- 46
- 45
- 5
- 15
- 46
- 41
- 42
- 43
- 3
- 40
- 44
- 5
- 46
- 15
- 46
- 58
- 28
- 15
- 32
- 29
- 44
- 9
- 0
- 21
- 87
- 22
- 25
- 0
- 135
- 32
- 25
- 135
- 18
- 9
- 135
- 41
- 134
- 32
- 18
- 142
- 45
- 141
- 47
- 45
- 6
- 28
- 29
- 44
- 15
- 4
- 46
- 12
- 11
- 46
- 35
- 47
-SRP0
-MDRP[rp0,rnd,grey]
-MDRP[rnd,grey]
-MIRP[min,rnd,grey]
-SRP1
-SLOOP
-IP
-IP
-IP
-IUP[x]
-SVTCA[y-axis]
-SRP0
-MIRP[rnd,grey]
-MIRP[rnd,grey]
-MDRP[rnd,grey]
-MIRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-SRP0
-MIRP[min,rnd,white]
-SRP0
-MIRP[min,rnd,white]
-SRP0
-MDRP[rp0,rnd,black]
-MIRP[min,rnd,white]
-SRP1
-SRP2
-IP
-IP
-SRP2
-IP
-IP
-IUP[y]
-MPPEM
-GTEQ
-IF
-SPVTL[orthog]
-SRP0
-SFVTCA[x-axis]
-MIRP[min,rnd,black]
-SRP1
-SLOOP
-IP
-SPVTL[orthog]
-SFVTCA[x-axis]
-MIRP[min,rnd,black]
-SPVTL[orthog]
-SRP0
-SFVTCA[x-axis]
-MIRP[min,rnd,black]
-SRP1
-SLOOP
-IP
-SPVTL[orthog]
-SFVTCA[x-axis]
-MIRP[min,rnd,black]
-SRP1
-SLOOP
-IP
-SPVTL[orthog]
-SFVTCA[x-axis]
-MIRP[min,rnd,black]
-SRP1
-SLOOP
-IP
-SPVTL[orthog]
-SRP0
-SFVTCA[x-axis]
-MIRP[min,rnd,black]
-SRP1
-SLOOP
-IP
-EIF
-CLEAR
-EndTTInstrs
+Flags: WO
 LayerCount: 2
 Fore
 SplineSet
@@ -9352,10 +9184,9 @@ SplineSet
  622 -440 622 -440 375 -440 c 0,18,19
  293 -440 293 -440 213.5 -426 c 128,-1,20
  134 -412 134 -412 59 -385 c 1,21,-1
- 96 -203 l 1,22,23
- 169 -247 169 -247 247.5 -270 c 128,-1,24
- 326 -293 326 -293 406 -293 c 0,25,26
- 555 -293 555 -293 637 -213 c 128,-1,27
+ 126 -250 l 5,22,23
+ 258 -293 258 -293 406 -293 c 0,24,25
+ 556.483126973 -291.553046856 556.483126973 -291.553046856 637 -213 c 0,26,27
  719 -133 719 -133 756 53 c 1,28,-1
  780 170 l 1,29,30
  722 83 722 83 635 37.5 c 128,-1,31
