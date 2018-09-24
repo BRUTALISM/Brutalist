@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1537463587
-ModificationTime: 1537791731
+ModificationTime: 1537792136
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -4387,29 +4387,29 @@ EndChar
 StartChar: C
 Encoding: 67 67 36
 Width: 1233
-Flags: W
+Flags: WO
 AnchorPoint: "below" 691 0 basechar 0
 AnchorPoint: "above" 691 1493 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-1081 43 m 1,0,1
- 1011 7 1011 7 934 -11 c 128,-1,2
+1101 43 m 5,0,1
+ 1031 7 1031 7 944 -11 c 128,-1,2
  857 -29 857 -29 772 -29 c 0,3,4
  470 -29 470 -29 311 170 c 128,-1,5
  152 369 152 369 152 745 c 0,6,7
  152 1122 152 1122 311 1321 c 128,-1,8
  470 1520 470 1520 772 1520 c 0,9,10
- 857 1520 857 1520 935 1502 c 128,-1,11
- 1013 1484 1013 1484 1081 1448 c 1,12,-1
- 992 1208 l 1,13,14
- 908 1255 908 1255 766 1255 c 128,-1,15
+ 857 1520 857 1520 945 1502 c 128,-1,11
+ 1033 1484 1033 1484 1101 1448 c 5,12,-1
+ 1012 1208 l 5,13,14
+ 928 1255 928 1255 776 1255 c 128,-1,15
  624 1255 624 1255 541.5 1126.5 c 128,-1,16
  459 998 459 998 459 745 c 0,17,18
  459 493 459 493 541.5 364.5 c 128,-1,19
  624 236 624 236 786 236 c 0,20,21
- 920 236 920 236 1005 273 c 5,22,-1
- 1081 43 l 1,0,1
+ 940 236 940 236 1025 273 c 5,22,-1
+ 1101 43 l 5,0,1
 EndSplineSet
 EndChar
 
@@ -5686,7 +5686,7 @@ EndChar
 StartChar: S
 Encoding: 83 83 52
 Width: 1233
-Flags: WO
+Flags: W
 AnchorPoint: "above" 616 1493 basechar 0
 AnchorPoint: "below" 616 0 basechar 0
 LayerCount: 2
@@ -14724,6 +14724,7 @@ EndChar
 StartChar: Ccircumflex
 Encoding: 264 264 200
 Width: 1233
+Flags: W
 LayerCount: 2
 Fore
 Refer: 3670 -1 N 1 0 0 1 156 373 2
