@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1537463587
-ModificationTime: 1537784591
+ModificationTime: 1537785409
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -8551,7 +8551,7 @@ EndChar
 StartChar: g
 Encoding: 103 103 72
 Width: 1233
-Flags: WO
+Flags: W
 AnchorPoint: "cedilla" 616 -426 basechar 0
 AnchorPoint: "above" 616 1120 basechar 0
 AnchorPoint: "below" 616 -426 basechar 0
@@ -9069,15 +9069,15 @@ AnchorPoint: "above" 592 1556 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-669 366 m 2,0,1
- 669 0 669 0 1095 195 c 1,2,-1
- 1112 44 l 5,3,4
- 485 -193 485 -193 485 366 c 2,5,-1
+669 366 m 6,0,1
+ 669 29 669 29 1072 167 c 5,2,-1
+ 1112 44 l 1,3,4
+ 485 -184 485 -184 485 366 c 2,5,-1
  485 1423 l 1,6,-1
  140 1423 l 1,7,-1
  140 1567 l 1,8,-1
  669 1567 l 1,9,-1
- 669 366 l 2,0,1
+ 669 366 l 6,0,1
 EndSplineSet
 EndChar
 
@@ -9610,109 +9610,27 @@ EndChar
 StartChar: r
 Encoding: 114 114 83
 Width: 1233
-Flags: W
-TtInstrs:
-NPUSHB
- 19
- 6
- 7
- 11
- 3
- 0
- 17
- 3
- 151
- 14
- 190
- 9
- 194
- 7
- 10
- 6
- 6
- 0
- 8
- 18
-SRP0
-MDRP[rp0,rnd,grey]
-MDRP[rnd,grey]
-MIRP[min,rnd,grey]
-SHP[rp2]
-IUP[x]
-SVTCA[y-axis]
-MDAP[rnd]
-MIRP[rnd,grey]
-MIRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-MDRP[rp0,rnd,grey]
-MDRP[min,rnd,grey]
-SRP1
-IP
-SRP1
-IP
-IUP[y]
-NPUSHB
- 37
- 16
- 0
- 16
- 1
- 16
- 17
- 32
- 0
- 32
- 1
- 32
- 17
- 48
- 0
- 48
- 1
- 51
- 16
- 48
- 17
- 64
- 0
- 64
- 1
- 67
- 16
- 64
- 17
- 80
- 0
- 80
- 1
- 80
- 16
- 80
- 17
- 18
-DELTAP1
-EndTTInstrs
+Flags: WO
 AnchorPoint: "cedilla" 394 0 basechar 0
 AnchorPoint: "above" 556 1120 basechar 0
 AnchorPoint: "below" 556 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-1095 889 m 5,0,1
- 1036 935 1036 935 975 956 c 132,-1,2
- 914 977 914 977 841 977 c 4,3,4
- 669 977 669 977 578 869 c 132,-1,5
- 487 761 487 761 487 557 c 6,6,-1
- 487 0 l 5,7,-1
- 302 0 l 5,8,-1
- 302 1120 l 5,9,-1
- 487 1120 l 5,10,-1
- 487 901 l 5,11,12
- 533 1020 533 1020 628.5 1083.5 c 132,-1,13
- 724 1147 724 1147 855 1147 c 4,14,15
- 923 1147 923 1147 982 1130 c 132,-1,16
- 1041 1113 1041 1113 1095 1077 c 5,17,-1
- 1095 889 l 5,0,1
+1040 934 m 5,0,1
+ 958 976 958 976 841 977 c 0,2,3
+ 668.944879655 976.934582448 668.944879655 976.934582448 578 869 c 128,-1,5
+ 487 761 487 761 487 557 c 2,6,-1
+ 487 0 l 1,7,-1
+ 302 0 l 1,8,-1
+ 302 1120 l 1,9,-1
+ 487 1120 l 1,10,-1
+ 487 901 l 1,11,12
+ 533 1020 533 1020 628.5 1083.5 c 128,-1,13
+ 724 1147 724 1147 855 1147 c 0,14,15
+ 923 1147 923 1147 982 1130 c 128,-1,16
+ 1041 1113 1041 1113 1095 1077 c 1,17,-1
+ 1040 934 l 5,0,1
 EndSplineSet
 EndChar
 

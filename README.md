@@ -26,6 +26,7 @@ Next release:
 * lowercase `c` – flatter terminals
 * lowercase `e` – flatter bottom terminal
 * lowercase `g` – flatter bottom terminal
+* lowercase `r` – flatter top terminal
 
 ## Motivation
 
