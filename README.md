@@ -6,33 +6,34 @@ Brutalist Mono is a very simple modification on top of DejaVu Sans Mono (yes, _a
 
 v1.0:
 
-* lowercase `r` – offset to the left
-* underscore – increase height, reduce width
-* minus sign – make wider
-* zero – slashed instead of dotted
+* `r` – offset to the left
+* `_` – increase height, reduce width
+* `-` (minus) – make wider
+* `0` – slashed instead of dotted
 
 v1.1:
 
-* lowercase `l` – increase upper arm and recenter
-* lowercase `i` and `j` – increase dot sizes, making them square
+* `l` – increase upper arm and recenter
+* `i` and `j` – increase dot sizes, making them square
 
 Next release:
 
-* lowercase `l` – drop foot below the baseline
-* uppercase `C` – flatter terminals
-* uppercase `G` – flatter top terminal
-* uppercase `J` – flatter bottom terminal
-* lowercase `a` – flatter top terminal
-* lowercase `c` – flatter terminals
-* lowercase `e` – flatter bottom terminal
-* lowercase `g` – flatter bottom terminal
-* lowercase `r` – flatter top terminal
-* lowercase `s` – flatter terminals
+* `l` – drop foot below the baseline
+* `C` – flatter terminals
+* `G` – flatter top terminal
+* `J` – flatter bottom terminal
+* `a` – flatter top terminal
+* `c` – flatter terminals
+* `e` – flatter bottom terminal
+* `g` – flatter bottom terminal
+* `r` – flatter top terminal
+* `s` – flatter terminals
 * `2` – flatter top terminal
 * `3` – flatter terminals
 * `5` – flatter bottom terminal and mid stroke
 * `6` – flatter top terminal
 * `9` – flatter bottom terminal
+* `$` – flatter terminals
 
 ## Motivation
 
