@@ -28,6 +28,7 @@ Next release:
 * lowercase `g` – flatter bottom terminal
 * lowercase `r` – flatter top terminal
 * lowercase `s` – flatter terminals
+* `2` – flatter top terminal
 * `3` – flatter terminals
 
 ## Motivation

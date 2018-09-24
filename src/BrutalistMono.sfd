@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1537463587
-ModificationTime: 1537787182
+ModificationTime: 1537787477
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -3804,90 +3804,7 @@ EndChar
 StartChar: two
 Encoding: 50 50 19
 Width: 1233
-Flags: W
-TtInstrs:
-NPUSHB
- 41
- 0
- 28
- 37
- 5
- 6
- 5
- 24
- 25
- 26
- 3
- 23
- 27
- 37
- 6
- 6
- 5
- 66
- 16
- 17
- 167
- 13
- 151
- 20
- 150
- 4
- 0
- 151
- 2
- 0
- 16
- 10
- 2
- 1
- 10
- 30
- 23
- 34
- 16
- 3
- 36
- 29
-SRP0
-MIRP[rp0,min,rnd,grey]
-MDRP[rnd,grey]
-MIRP[rp0,min,rnd,grey]
-MIRP[min,rnd,grey]
-MDRP[grey]
-MDRP[grey]
-SRP1
-SRP2
-IP
-IUP[x]
-SVTCA[y-axis]
-MDAP[rnd]
-MIRP[min,rnd,grey]
-SHP[rp2]
-MIRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-MIRP[rp0,rnd,grey]
-MDRP[min,rnd,grey]
-IUP[y]
-MPPEM
-GTEQ
-IF
-SPVTL[orthog]
-SRP0
-SFVTCA[x-axis]
-MIRP[min,rnd,black]
-SRP1
-SLOOP
-IP
-SPVTL[orthog]
-SRP0
-SFVTCA[x-axis]
-MIRP[min,rnd,black]
-SLOOP
-SHP[rp2]
-EIF
-CLEAR
-EndTTInstrs
+Flags: WO
 LayerCount: 2
 Fore
 SplineSet
@@ -3902,16 +3819,15 @@ SplineSet
  842 1004 842 1004 842 1083 c 0,10,11
  842 1208 842 1208 768.5 1279 c 128,-1,12
  695 1350 695 1350 567 1350 c 0,13,14
- 476 1350 476 1350 376 1317 c 128,-1,15
- 276 1284 276 1284 164 1217 c 1,16,-1
- 164 1421 l 1,17,18
- 267 1470 267 1470 366.5 1495 c 128,-1,19
- 466 1520 466 1520 563 1520 c 0,20,21
- 782 1520 782 1520 915.5 1403.5 c 128,-1,22
- 1049 1287 1049 1287 1049 1098 c 0,23,24
- 1049 1002 1049 1002 1004.5 906 c 128,-1,25
- 960 810 960 810 860 694 c 0,26,27
- 804 629 804 629 697.5 514 c 128,-1,28
+ 394 1350 394 1350 218 1274 c 1,15,-1
+ 164 1421 l 1,16,17
+ 267 1470 267 1470 366.5 1495 c 128,-1,18
+ 466 1520 466 1520 563 1520 c 0,19,20
+ 782 1520 782 1520 915.5 1403.5 c 128,-1,21
+ 1049 1287 1049 1287 1049 1098 c 0,22,23
+ 1049 1002 1049 1002 1004.5 906 c 128,-1,24
+ 960 810 960 810 860 694 c 0,25,26
+ 804 629 804 629 697.5 514 c 128,-1,27
  591 399 591 399 373 170 c 1,0,-1
 EndSplineSet
 EndChar
@@ -3919,7 +3835,7 @@ EndChar
 StartChar: three
 Encoding: 51 51 20
 Width: 1233
-Flags: WO
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
