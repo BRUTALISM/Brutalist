@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1537463587
-ModificationTime: 1537786876
+ModificationTime: 1537787333
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -3479,83 +3479,7 @@ EndChar
 StartChar: three
 Encoding: 51 51 20
 Width: 1233
-Flags: W
-TtInstrs:
-NPUSHB
- 43
- 0
- 19
- 99
- 21
- 10
- 87
- 9
- 113
- 13
- 99
- 6
- 31
- 87
- 32
- 113
- 28
- 99
- 35
- 97
- 6
- 101
- 21
- 41
- 21
- 20
- 19
- 10
- 4
- 41
- 22
- 31
- 32
- 0
- 4
- 9
- 16
- 19
- 3
- 25
- 19
- 38
- 9
- 41
-SRP0
-MDRP[rp0,rnd,grey]
-MDRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-MDRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-SRP1
-SLOOP
-IP
-SRP1
-SLOOP
-IP
-IUP[x]
-SVTCA[y-axis]
-SRP0
-MDRP[rnd,grey]
-MIRP[rnd,grey]
-MIRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-MIRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-SRP0
-MIRP[min,rnd,white]
-MIRP[rp0,rnd,white]
-MIRP[min,rnd,white]
-SRP0
-MIRP[min,rnd,white]
-IP
-IUP[y]
-EndTTInstrs
+Flags: WO
 LayerCount: 2
 Fore
 SplineSet
@@ -3566,10 +3490,9 @@ SplineSet
  669 -29 669 -29 389 -29 c 0,6,7
  281 -29 281 -29 178.5 -10.5 c 128,-1,8
  76 8 76 8 -18 45 c 1,9,-1
- 20 246 l 1,10,11
- 111 194 111 194 206 167.5 c 128,-1,12
- 301 141 301 141 399 141 c 0,13,14
- 581 141 581 141 693 234.5 c 128,-1,15
+ 60 200 l 1,10,11
+ 226 142 226 142 399 141 c 0,12,13
+ 581.791019399 141.660359945 581.791019399 141.660359945 693 234.5 c 0,14,15
  805 328 805 328 805 477 c 0,16,17
  805 594 805 594 733.5 654.5 c 128,-1,18
  662 715 662 715 524 715 c 2,19,-1
@@ -3580,14 +3503,13 @@ SplineSet
  901 1031 901 1031 901 1155 c 0,25,26
  901 1255 901 1255 839.5 1302.5 c 128,-1,27
  778 1350 778 1350 649 1350 c 0,28,29
- 567 1350 567 1350 470 1330 c 128,-1,30
- 373 1310 373 1310 260 1270 c 1,31,-1
- 297 1456 l 1,32,33
- 420 1489 420 1489 517 1504.5 c 128,-1,34
- 614 1520 614 1520 698 1520 c 0,35,36
- 886 1520 886 1520 994 1432 c 128,-1,37
- 1102 1344 1102 1344 1102 1192 c 0,38,39
- 1102 1039 1102 1039 1012.5 935.5 c 128,-1,40
+ 480 1350 480 1350 324 1306 c 1,30,-1
+ 297 1456 l 1,31,32
+ 420 1489 420 1489 517 1504.5 c 128,-1,33
+ 614 1520 614 1520 698 1520 c 0,34,35
+ 886 1520 886 1520 994 1432 c 128,-1,36
+ 1102 1344 1102 1344 1102 1192 c 0,37,38
+ 1102 1039 1102 1039 1012.5 935.5 c 128,-1,39
  923 832 923 832 762 799 c 1,0,1
 EndSplineSet
 EndChar
@@ -10692,7 +10614,7 @@ EndChar
 StartChar: s
 Encoding: 115 115 84
 Width: 1233
-Flags: WO
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
