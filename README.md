@@ -2,6 +2,12 @@
 
 Brutalist Mono is a very simple modification on top of [DejaVu Sans Mono](https://github.com/dejavu-fonts/dejavu-fonts) (yes, _another one_), making it more suitable for coding. The changes are very nitpicky and you can probably just move along.
 
+![brutalist](images/brutalist.png)
+
+Comparison to DejaVu Sans Mono:
+
+![brutalist](images/brutalist_vs_dejavu.gif)
+
 ## Changes from DejaVu Sans Mono
 
 v1.0:
@@ -44,7 +50,7 @@ Another DejaVu/Vera Mono clone? Yes. But this one is opinionated:
 2. I don't care about font hinting. Modern monitors are high-DPI.
 3. I don't care about `O0`, `lI1|`, or any of that crap. It's fine. See point #1.
 
-If any of this bothers you, try [Hack](https://github.com/source-foundry/Hack). It's awesome.
+If any of this bothers you, try [Hack](https://github.com/source-foundry/Hack). It's awesome. I made [my mod](https://github.com/BRUTALISM/Hack) available as well.
 
 ### Why not Hack?
 
