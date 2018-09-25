@@ -1,6 +1,6 @@
 # Brutalist Mono
 
-Brutalist Mono is a very simple modification on top of DejaVu Sans Mono (yes, _another one_), making it more suitable for coding. The changes are very nitpicky and you can probably just move along.
+Brutalist Mono is a very simple modification on top of [DejaVu Sans Mono](https://github.com/dejavu-fonts/dejavu-fonts) (yes, _another one_), making it more suitable for coding. The changes are very nitpicky and you can probably just move along.
 
 ## Changes from DejaVu Sans Mono
 
@@ -16,7 +16,7 @@ v1.1:
 * `l` – increase upper arm and recenter
 * `i` and `j` – increase dot sizes, making them square
 
-Next release:
+v1.2:
 
 * `l` – drop foot below the baseline
 * `C` – flatter terminals
@@ -38,11 +38,11 @@ Next release:
 
 ## Motivation
 
-Another DejaVu Sans Mono / Bitstream Vera Mono clone? Yes. But this one is opinionated:
+Another DejaVu/Vera Mono clone? Yes. But this one is opinionated:
 
 1. I don't care about "readability on small font sizes". Make your font larger and/or get a decent monitor. It's the 21st century.
 2. I don't care about font hinting. Modern monitors are high-DPI.
-3. I don't care about `O0`, `lI1|`, or any of that crap. It's good enough. See point #1.
+3. I don't care about `O0`, `lI1|`, or any of that crap. It's fine. See point #1.
 
 If any of this bothers you, try [Hack](https://github.com/source-foundry/Hack). It's awesome.
 
@@ -63,18 +63,22 @@ Hack is great, but has way too many unnecessary modifications on top of the base
 
 ### Why not DejaVu Sans Mono?
 
-This typeface is almost perfect for programming, except:
+This typeface is almost perfect for programming<sup>&dagger;</sup>, except:
 
 * the underscore is ridiculously thin, making it visually odd when reading `THINGS_WITH_MANY_UNDERSCORES` and esoteric C/C++ identifiers with `__multiple__underscores__`
 * the lowercase `r` is offset a bit to the right (Hack has got this right – once you see it, you can not unsee it)
 * the `-` glyph is ridiculously narrow
+* other nitpicky stuff you really don't care about but I do
+
+<sup>&dagger;</sup> – [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) is still the king, and I don't dare [come at the king](https://www.youtube.com/watch?v=py1WDlaIr9A).
 
 ## Building
 
 Short version:
 
-* Edit the .sdf files with FontForge
+* Edit the .sdf files with FontForge (if you want to mod)
 * `make`
+* observe the `build` folder
 
 This will probably fail, so: [long version](BUILDING.md).
 
