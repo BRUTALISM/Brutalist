@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1537463587
-ModificationTime: 1540137017
+ModificationTime: 1540138229
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -7612,17 +7612,17 @@ AnchorPoint: "below" 602 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-427 467 m 2,0,-1
- 427 1331 l 1,1,-1
- 80 1331 l 1,2,-1
- 80 1556 l 1,3,-1
- 720 1556 l 1,4,-1
- 720 467 l 2,5,6
- 719.99997086 212.114257812 719.99997086 212.114257812 944 212.114257812 c 3,7,8
- 1016.00009066 212.114257812 1016.00009066 212.114257812 1085 224 c 1,9,-1
- 1134 0 l 1,10,11
- 1019.00041545 -29.3349184354 1019.00041545 -29.3349184354 884 -29.3349184354 c 3,12,13
- 426.999877275 -29.3349184354 426.999877275 -29.3349184354 427 467 c 2,0,-1
+427 467 m 6,0,-1
+ 427 1331 l 5,1,-1
+ 80 1331 l 5,2,-1
+ 80 1556 l 5,3,-1
+ 720 1556 l 5,4,-1
+ 720 467 l 6,5,6
+ 719.99997086 212.114257812 719.99997086 212.114257812 944 212.114257812 c 7,7,8
+ 1016.00009066 212.114257812 1016.00009066 212.114257812 1085 224 c 5,9,-1
+ 1134 0 l 5,10,11
+ 1019.00041545 -29.3349184354 1019.00041545 -29.3349184354 884 -29.3349184354 c 7,12,13
+ 426.999877275 -29.3349184354 426.999877275 -29.3349184354 427 467 c 6,0,-1
 EndSplineSet
 EndChar
 
@@ -8211,58 +8211,7 @@ EndChar
 StartChar: t
 Encoding: 116 116 85
 Width: 1233
-Flags: W
-TtInstrs:
-NPUSHB
- 24
- 5
- 14
- 8
- 15
- 3
- 143
- 0
- 17
- 1
- 144
- 8
- 143
- 10
- 8
- 11
- 9
- 2
- 4
- 0
- 22
- 16
- 18
- 14
- 20
-SRP0
-MDRP[rp0,rnd,grey]
-ALIGNRP
-MDRP[rnd,grey]
-MIRP[rp0,min,rnd,grey]
-ALIGNRP
-MDRP[rnd,grey]
-SHP[rp2]
-IP
-IP
-IUP[x]
-SVTCA[y-axis]
-MDAP[rnd]
-MIRP[min,rnd,grey]
-MIRP[rp0,rnd,grey]
-ALIGNRP
-MDRP[rnd,grey]
-MIRP[min,rnd,grey]
-SHP[rp2]
-SRP1
-IP
-IP
-IUP[y]
-EndTTInstrs
+Flags: WO
 AnchorPoint: "above" 616 1556 basechar 0
 AnchorPoint: "below" 616 0 basechar 0
 LayerCount: 2
@@ -8273,14 +8222,12 @@ SplineSet
  1073 1120 l 1,2,-1
  1073 895 l 1,3,-1
  690 895 l 1,4,-1
- 690 365 l 2,5,6
- 690 290 690 290 726.5 257.5 c 128,-1,7
- 763 225 763 225 848 225 c 2,8,-1
- 1073 225 l 1,9,-1
- 1073 0 l 1,10,-1
- 827 0 l 2,11,12
- 575 0 575 0 486 80.5 c 128,-1,13
- 397 161 397 161 397 379 c 2,14,-1
+ 690 465 l 2,5,6
+ 690 212 690 212 916 212 c 3,7,8
+ 997 212 997 212 1056 223 c 1,9,-1
+ 1105 0 l 1,10,11
+ 974 -28 974 -28 840 -28 c 3,12,13
+ 397 -28 397 -28 397 479 c 2,14,-1
  397 895 l 1,15,-1
  111 895 l 1,16,-1
  111 1120 l 1,17,-1
@@ -9433,7 +9380,7 @@ EndChar
 StartChar: asciitilde
 Encoding: 126 126 95
 Width: 1233
-Flags: WO
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -17012,32 +16959,6 @@ StartChar: tcaron
 Encoding: 357 357 293
 Width: 1233
 Flags: W
-TtInstrs:
-MPPEM
-PUSHB_1
- 10
-GTEQ
-MPPEM
-PUSHB_1
- 14
-LTEQ
-AND
-IF
-PUSHW_2
- 20
- 64
-SHPIX
-EIF
-IUP[x]
-SVTCA[y-axis]
-NPUSHB
- 3
- 63
- 20
- 1
-DELTAP1
-IUP[y]
-EndTTInstrs
 LayerCount: 2
 Fore
 Refer: 85 116 N 1 0 0 1 0 0 2

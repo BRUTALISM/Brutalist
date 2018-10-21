@@ -55,6 +55,7 @@ v2.0:
 * `g` – more even lower terminal
 * `J` – clean up lower terminal
 * `~` – blatantly stolen from Hack
+* `t` – make bottom curved the same as `l`
 
 ## Motivation
 
