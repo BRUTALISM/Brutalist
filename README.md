@@ -51,6 +51,7 @@ v2.0:
 * `l` – more pedantic bottom
 * `r` – wider right terminal
 * `s` – more even terminals
+* `9` – more even lower terminal
 
 ## Motivation
 
