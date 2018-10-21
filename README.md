@@ -54,6 +54,7 @@ v2.0:
 * `9` – more even lower terminal
 * `g` – more even lower terminal
 * `J` – clean up lower terminal
+* `~` – blatantly stolen from Hack
 
 ## Motivation
 
