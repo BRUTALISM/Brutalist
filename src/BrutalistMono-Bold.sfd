@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1537463587
-ModificationTime: 1540142659
+ModificationTime: 1540161296
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -3231,7 +3231,7 @@ EndChar
 StartChar: five
 Encoding: 53 53 22
 Width: 1233
-Flags: WO
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -8784,147 +8784,26 @@ EndChar
 StartChar: y
 Encoding: 121 121 90
 Width: 1233
-Flags: W
-TtInstrs:
-NPUSHB
- 65
- 10
- 11
- 10
- 0
- 15
- 6
- 7
- 8
- 3
- 5
- 9
- 0
- 0
- 15
- 14
- 15
- 0
- 15
- 13
- 12
- 13
- 0
- 0
- 15
- 13
- 14
- 13
- 10
- 11
- 10
- 12
- 11
- 11
- 10
- 37
- 13
- 11
- 9
- 16
- 0
- 11
- 5
- 143
- 3
- 145
- 14
- 11
- 144
- 16
- 14
- 13
- 12
- 10
- 9
- 6
- 3
- 0
- 8
- 15
- 4
- 15
- 49
- 11
- 47
- 16
-SRP0
-MIRP[rp0,min,rnd,grey]
-MIRP[min,rnd,grey]
-MDRP[rnd,grey]
-SRP1
-SLOOP
-IP
-IUP[x]
-SVTCA[y-axis]
-SRP0
-MIRP[rnd,grey]
-SHP[rp2]
-MIRP[rp0,rnd,grey]
-MIRP[min,rnd,grey]
-SRP1
-IP
-SRP1
-IP
-SRP2
-IP
-IUP[y]
-MPPEM
-GTEQ
-IF
-SPVTL[orthog]
-SRP0
-SFVTCA[x-axis]
-MDRP[min,black]
-SPVTL[orthog]
-SRP0
-SFVTL[parallel]
-MDRP[min,black]
-SPVTL[orthog]
-SRP0
-SFVTL[parallel]
-MDRP[min,black]
-SPVTL[orthog]
-SRP0
-SFVTCA[x-axis]
-MDRP[min,black]
-SPVTL[orthog]
-SRP0
-SFVTCA[x-axis]
-MDRP[min,black]
-SRP1
-SLOOP
-IP
-SPVTL[orthog]
-SFVTL[parallel]
-MDRP[min,black]
-EIF
-CLEAR
-EndTTInstrs
+Flags: WO
 AnchorPoint: "above" 616 1120 basechar 0
 AnchorPoint: "below" 616 -426 basechar 0
 LayerCount: 2
 Fore
 SplineSet
 711 -121 m 2,0,1
- 652 -279 652 -279 569.5 -351.5 c 128,-1,2
- 487 -424 487 -424 369 -424 c 2,3,-1
- 127 -424 l 1,4,-1
- 127 -201 l 1,5,-1
- 246 -201 l 2,6,7
- 336 -201 336 -201 378 -170.5 c 128,-1,8
- 420 -140 420 -140 463 -29 c 1,9,-1
- 485 31 l 1,10,-1
- 59 1120 l 1,11,-1
- 367 1120 l 1,12,-1
- 623 393 l 1,13,-1
- 868 1120 l 1,14,-1
- 1176 1120 l 1,15,-1
+ 646.896841924 -292.079611124 646.896841924 -292.079611124 555 -363 c 0,2,3
+ 470 -428 470 -428 332 -427.395507812 c 0,4,5
+ 186 -427 186 -427 68 -352 c 0,6,-1
+ 124 -151 l 5,7,8
+ 206 -200 206 -200 273 -200.333984375 c 0,9,10
+ 336 -200 336 -200 378 -170.5 c 0,11,12
+ 420 -140 420 -140 463 -29 c 1,13,-1
+ 485 31 l 1,14,-1
+ 59 1120 l 1,15,-1
+ 367 1120 l 1,16,-1
+ 623 393 l 1,17,-1
+ 868 1120 l 1,18,-1
+ 1176 1120 l 1,19,-1
  711 -121 l 2,0,1
 EndSplineSet
 EndChar
@@ -14439,52 +14318,6 @@ StartChar: ydieresis
 Encoding: 255 255 191
 Width: 1233
 Flags: W
-TtInstrs:
-PUSHB_5
- 15
- 18
- 23
- 11
- 7
-CALL
-NPUSHB
- 33
- 175
- 18
- 160
- 23
- 143
- 18
- 128
- 23
- 127
- 18
- 112
- 23
- 95
- 18
- 80
- 23
- 79
- 18
- 64
- 23
- 63
- 18
- 48
- 23
- 47
- 18
- 32
- 23
- 15
- 18
- 0
- 23
- 16
-DELTAP1
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 Refer: 90 121 N 1 0 0 1 0 0 2
@@ -17348,24 +17181,6 @@ EndChar
 StartChar: ycircumflex
 Encoding: 375 375 311
 Width: 1233
-TtInstrs:
-PUSHB_5
- 22
- 2
- 6
- 18
- 7
-CALL
-NPUSHB
- 5
- 15
- 2
- 0
- 6
- 2
-DELTAP1
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 Refer: 622 710 N 1 0 0 1 1 7 2

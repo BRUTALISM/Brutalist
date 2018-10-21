@@ -60,6 +60,7 @@ v2.0:
 * `[` – make wider, match `lparen`'s width
 * `]` – make wider, match `rparen`'s width
 * `5` – more even bottom terminal, add back the "spike" in the middle
+* `y` – curved bottom terminal
 
 ## Motivation
 
