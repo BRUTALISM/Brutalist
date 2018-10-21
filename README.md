@@ -42,6 +42,10 @@ v1.2:
 * `9` – flatter bottom terminal
 * `$` – flatter terminals
 
+v2.0:
+
+* `C` – slightly rounder shape
+
 ## Motivation
 
 Another DejaVu/Vera Mono clone? Yes. But this one is opinionated:
