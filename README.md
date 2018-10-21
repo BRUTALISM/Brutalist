@@ -48,6 +48,8 @@ v2.0:
 * `G` – more even upper terminal
 * `S` – more even terminals
 * `c` – more even terminals
+* `l` – more pedantic bottom
+* `r` – wider right terminal
 
 ## Motivation
 
