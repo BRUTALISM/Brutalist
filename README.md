@@ -2,7 +2,7 @@
 
 Brutalist Mono is a very simple modification on top of [DejaVu Sans Mono](https://github.com/dejavu-fonts/dejavu-fonts) (yes, _another one_), making it more suitable for coding. The changes are very nitpicky and you can probably just move along.
 
-![brutalist](images/brutalist.png)
+![brutalist](images/brutalist.jpg)
 
 Comparison to DejaVu Sans Mono:
 
