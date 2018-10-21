@@ -46,6 +46,7 @@ v2.0:
 
 * `C` – slightly rounder shape
 * `G` – more even upper terminal
+* `S` – more even terminals
 
 ## Motivation
 
