@@ -50,6 +50,7 @@ v2.0:
 * `c` – more even terminals
 * `l` – more pedantic bottom
 * `r` – wider right terminal
+* `s` – more even terminals
 
 ## Motivation
 
