@@ -59,6 +59,7 @@ v2.0:
 * `j` – make bottom curved the same as `l`
 * `[` – make wider, match `lparen`'s width
 * `]` – make wider, match `rparen`'s width
+* `5` – more even bottom terminal, add back the "spike" in the middle
 
 ## Motivation
 
