@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1537463587
-ModificationTime: 1540139861
+ModificationTime: 1540141608
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -8221,65 +8221,7 @@ EndChar
 StartChar: j
 Encoding: 106 106 75
 Width: 1233
-Flags: W
-TtInstrs:
-NPUSHB
- 29
- 5
- 0
- 1
- 10
- 140
- 8
- 1
- 182
- 3
- 16
- 196
- 14
- 155
- 3
- 194
- 8
- 195
- 18
- 11
- 8
- 2
- 9
- 2
- 15
- 4
- 6
- 14
- 0
- 18
-SRP0
-MDRP[rp0,rnd,grey]
-ALIGNRP
-MIRP[min,rnd,grey]
-SHP[rp2]
-MDRP[rnd,grey]
-MDRP[rnd,grey]
-SRP2
-IP
-IP
-IUP[x]
-SVTCA[y-axis]
-SRP0
-MIRP[rnd,grey]
-MIRP[rnd,grey]
-MIRP[rp0,min,rnd,grey]
-MIRP[min,rnd,grey]
-SRP0
-MIRP[min,rnd,white]
-SRP0
-MIRP[min,rnd,white]
-SRP1
-IP
-IP
-IUP[y]
-EndTTInstrs
+Flags: WO
 AnchorPoint: "cedilla" 441 -423 basechar 0
 AnchorPoint: "below" 616 -426 basechar 0
 LayerCount: 2
@@ -8290,14 +8232,12 @@ SplineSet
  283 977 l 1,2,-1
  283 1120 l 1,3,-1
  784 1120 l 1,4,-1
- 784 -20 l 2,5,6
- 784 -215 784 -215 694.5 -320.5 c 128,-1,7
- 605 -426 605 -426 440 -426 c 2,8,-1
- 186 -426 l 1,9,-1
- 186 -270 l 1,10,-1
- 420 -270 l 2,11,12
- 510 -270 510 -270 555 -207.5 c 128,-1,13
- 600 -145 600 -145 600 -20 c 2,0,-1
+ 785 -20 l 2,5,6
+ 785 -427 785 -427 416 -427 c 3,7,8
+ 284 -427 284 -427 149 -375 c 0,9,-1
+ 179 -221 l 4,10,11
+ 294 -268 294 -268 415 -268.5 c 4,12,13
+ 600 -268 600 -268 600 -20 c 2,0,-1
 551 1556 m 1,14,-1
  784 1556 l 1,15,-1
  784 1323 l 1,16,-1
@@ -9149,7 +9089,7 @@ EndChar
 StartChar: t
 Encoding: 116 116 85
 Width: 1233
-Flags: WO
+Flags: W
 AnchorPoint: "cedilla" 888 0 basechar 0
 AnchorPoint: "below" 616 0 basechar 0
 AnchorPoint: "above" 616 1556 basechar 0
