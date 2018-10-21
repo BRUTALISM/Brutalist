@@ -57,6 +57,8 @@ v2.0:
 * `~` – blatantly stolen from Hack
 * `t` – make bottom curved the same as `l`
 * `j` – make bottom curved the same as `l`
+* `[` – make wider, match `lparen`'s width
+* `]` – make wider, match `rparen`'s width
 
 ## Motivation
 
