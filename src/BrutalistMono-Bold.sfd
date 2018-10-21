@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1537463587
-ModificationTime: 1540126979
+ModificationTime: 1540127609
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -4799,16 +4799,16 @@ EndChar
 StartChar: J
 Encoding: 74 74 43
 Width: 1233
-Flags: W
+Flags: WO
 AnchorPoint: "below" 666 0 basechar 0
 AnchorPoint: "above" 666 1493 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-109 74 m 1,0,-1
- 191 299 l 5,1,2
- 346 237 346 237 489 236 c 0,3,4
- 606 237 606 237 659 294 c 0,5,6
+50 99 m 1,0,-1
+ 132 353 l 5,1,2
+ 331 238 331 238 459 237.5 c 0,3,4
+ 606 238 606 238 659 294 c 0,5,6
  713 352 713 352 713 479 c 2,7,-1
  713 1233 l 1,8,-1
  352 1233 l 1,9,-1
@@ -4816,9 +4816,8 @@ SplineSet
  1008 1493 l 1,11,-1
  1008 479 l 2,12,13
  1008 206 1008 206 893.5 88.5 c 128,-1,14
- 779 -29 779 -29 516 -29 c 0,15,16
- 421 -29 421 -29 317.5 -3 c 128,-1,17
- 214 23 214 23 109 74 c 1,0,-1
+ 779 -29 779 -29 516 -29 c 3,15,16
+ 274 -29 274 -29 50 99 c 1,0,-1
 EndSplineSet
 EndChar
 
@@ -7239,7 +7238,7 @@ EndChar
 StartChar: g
 Encoding: 103 103 72
 Width: 1233
-Flags: WO
+Flags: W
 AnchorPoint: "below" 616 -426 basechar 0
 AnchorPoint: "above" 616 1120 basechar 0
 LayerCount: 2

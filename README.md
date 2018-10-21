@@ -53,6 +53,7 @@ v2.0:
 * `s` – more even terminals
 * `9` – more even lower terminal
 * `g` – more even lower terminal
+* `J` – clean up lower terminal
 
 ## Motivation
 
