@@ -52,6 +52,7 @@ v2.0:
 * `r` – wider right terminal
 * `s` – more even terminals
 * `9` – more even lower terminal
+* `g` – more even lower terminal
 
 ## Motivation
 
