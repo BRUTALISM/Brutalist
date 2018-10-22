@@ -69,6 +69,7 @@ Another DejaVu/Vera Mono clone? Yes. But this one is opinionated:
 
 1. I don't care about "readability on small font sizes". Make your font larger and/or get a decent monitor. It's the 21st century.
 2. I don't care about font hinting. Modern monitors are high-DPI.
+    * Note: Windows seems to require manual hinting instructions to be added even when rendering at high DPI screens. I will not be adding this. Therefore, this font looks terrible on Windows.
 3. I don't care about `O0`, `lI1|`, or any of that crap. It's fine. See point #1.
 
 If any of this bothers you, try [Hack](https://github.com/source-foundry/Hack). It's awesome. I made [my mod](https://github.com/BRUTALISM/Hack) available as well.
