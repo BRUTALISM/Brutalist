@@ -67,6 +67,7 @@ v2.1:
 
 * `,`, `.`, `;`, `:`, `!`, `?` – use rounded dots and commas (adapted from Hack)
 * `*` – use Menlo variant
+* `l` – clean up bottom curve a little bit
 
 ## Motivation
 
