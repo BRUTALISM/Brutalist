@@ -63,6 +63,10 @@ v2.0:
 * `y` – curved bottom terminal
 * `$` – more even terminals
 
+v2.1:
+
+* `,`, `.`, `;`, `:`, `!`, `?` – use rounded dots and commas (adapted from Hack)
+
 ## Motivation
 
 Another DejaVu/Vera Mono clone? Yes. But this one is opinionated:
