@@ -6,7 +6,7 @@ use warnings;
 # language coverage analyzator
 # (c)2006 Stepan Roh (PUBLIC DOMAIN)
 # usage: ./langcover.pl fc-lang_dir sfd_file1 label1 (sfd_file2 label2...)
-#  files from http://webcvs.freedesktop.org/fontconfig/fontconfig/fc-lang/ should be downloaded to fc-lang directory
+#  files from https://gitlab.freedesktop.org/fontconfig/fontconfig/-/tree/main/fc-lang should be downloaded to fc-lang directory
 
 use FileHandle;
 
