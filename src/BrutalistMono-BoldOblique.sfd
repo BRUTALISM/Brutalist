@@ -11353,7 +11353,7 @@ EndChar
 
 StartChar: asciitilde
 Encoding: 126 126 95
-Width: 1236
+Width: 1233
 Flags: W
 LayerCount: 2
 Fore
