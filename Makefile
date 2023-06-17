@@ -110,11 +110,11 @@ $(BUILDDIR)/unicover.txt: $(patsubst %, $(TMPDIR)/%.sfd, BrutalistMono)
 	$(UNICOVER) $(UNICODEDATA) $(BLOCKS) \
 	            $(TMPDIR)/BrutalistMono.sfd "Sans Mono" > $@
 
-$(BUILDDIR)/unicover-lgc.txt: $(patsubst %, $(TMPDIR)/%.sfd, BrutalistLGCSansMono)
+$(BUILDDIR)/unicover-lgc.txt: $(patsubst %, $(TMPDIR)/%.sfd, BrutalistLGCMono)
 	@echo "[5] => $@"
 	install -d $(dir $@)
 	$(UNICOVER) $(UNICODEDATA) $(BLOCKS) \
-	            $(TMPDIR)/BrutalistLGCSansMono.sfd "Sans Mono" > $@
+	            $(TMPDIR)/BrutalistLGCMono.sfd "Sans Mono" > $@
 
 $(BUILDDIR)/langcover.txt: $(patsubst %, $(TMPDIR)/%.sfd, BrutalistMono)
 	@echo "[6] => $@"
@@ -126,14 +126,14 @@ else
 	             $(TMPDIR)/BrutalistMono.sfd "Sans Mono" > $@
 endif
 
-$(BUILDDIR)/langcover-lgc.txt: $(patsubst %, $(TMPDIR)/%.sfd, BrutalistLGCSansMono)
+$(BUILDDIR)/langcover-lgc.txt: $(patsubst %, $(TMPDIR)/%.sfd, BrutalistLGCMono)
 	@echo "[6] => $@"
 	install -d $(dir $@)
 ifeq "$(FC-LANG)" ""
 	touch $@
 else
 	$(LANGCOVER) $(FC-LANG) \
-	             $(TMPDIR)/BrutalistLGCSansMono.sfd "Sans Mono" > $@
+	             $(TMPDIR)/BrutalistLGCMono.sfd "Sans Mono" > $@
 endif
 
 $(BUILDDIR)/Makefile: Makefile
