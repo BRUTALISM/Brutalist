@@ -66,7 +66,9 @@ STATICSRCDOC := $(addprefix $(DOCDIR)/, BUILDING.md)
 GENDOCFULL = unicover.txt langcover.txt status.txt
 GENDOCLGC  = unicover-lgc.txt langcover-lgc.txt
 
-all : full lgc
+#disable building lgc fonts
+#all : full lgc
+all : full
 
 $(TMPDIR)/%.sfd: $(SRCDIR)/%.sfd
 	@echo "[1] $< => $@"
