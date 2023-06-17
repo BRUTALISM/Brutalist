@@ -1,6 +1,8 @@
 # Brutalist Mono
 
-Brutalist Mono is a very simple modification on top of [DejaVu Sans Mono](https://github.com/dejavu-fonts/dejavu-fonts) (yes, _another one_), making it more suitable for coding. The changes are very nitpicky and you can probably just move along.
+This has been forked from [Brutalist Mono](https://github.com/BRUTALISM/Brutalist) to have it recognized correctly as a fixed width font by macOS.
+
+Brutalist Mono is a fork of [DejaVu Sans Mono](https://github.com/dejavu-fonts/dejavu-fonts) which itself is a fork of [Bitstream Vera Sans Mono](https://web.archive.org/web/20210314185159/https://www.gnome.org/fonts/).
 
 ![brutalist](images/brutalist.jpg)
 
@@ -10,37 +12,15 @@ Comparison to DejaVu Sans Mono:
 
 ## Changes from DejaVu Sans Mono
 
-v1.0:
+v2.2:
 
-* `r` – offset to the left
-* `_` – increase height, reduce width
-* `-` (minus) – make wider
-* `0` – slashed instead of dotted
+* Fix spacing so the font is recognized by macOS as a monospace font.
 
-v1.1:
+v2.1:
 
-* `l` – increase upper arm and recenter
-* `i` and `j` – increase dot sizes, making them square
-
-v1.2:
-
-* `l` – drop foot below the baseline
-* `C` – flatter terminals
-* `G` – flatter top terminal
-* `J` – flatter bottom terminal
-* `S` – flatter terminals
-* `a` – flatter top terminal
-* `c` – flatter terminals
-* `e` – flatter bottom terminal
-* `g` – flatter bottom terminal
-* `r` – flatter top terminal
-* `s` – flatter terminals
-* `2` – flatter top terminal
-* `3` – flatter terminals
-* `5` – flatter bottom terminal and mid stroke
-* `6` – flatter top terminal
-* `9` – flatter bottom terminal
-* `$` – flatter terminals
+* `,`, `.`, `;`, `:`, `!`, `?` – use rounded dots and commas (adapted from Hack)
+* `*` – use Menlo variant
+* `l` – clean up bottom curve a little bit
 
 v2.0:
 
@@ -63,48 +43,37 @@ v2.0:
 * `y` – curved bottom terminal
 * `$` – more even terminals
 
-v2.1:
+v1.2:
 
-* `,`, `.`, `;`, `:`, `!`, `?` – use rounded dots and commas (adapted from Hack)
-* `*` – use Menlo variant
-* `l` – clean up bottom curve a little bit
+* `l` – drop foot below the baseline
+* `C` – flatter terminals
+* `G` – flatter top terminal
+* `J` – flatter bottom terminal
+* `S` – flatter terminals
+* `a` – flatter top terminal
+* `c` – flatter terminals
+* `e` – flatter bottom terminal
+* `g` – flatter bottom terminal
+* `r` – flatter top terminal
+* `s` – flatter terminals
+* `2` – flatter top terminal
+* `3` – flatter terminals
+* `5` – flatter bottom terminal and mid stroke
+* `6` – flatter top terminal
+* `9` – flatter bottom terminal
+* `$` – flatter terminals
 
-## Motivation
+v1.1:
 
-Another DejaVu/Vera Mono clone? Yes. But this one is opinionated:
+* `l` – increase upper arm and recenter
+* `i` and `j` – increase dot sizes, making them square
 
-1. I don't care about "readability on small font sizes". Make your font larger and/or get a decent monitor. It's the 21st century.
-2. I don't care about font hinting. Modern monitors are high-DPI.
-    * Note: The native renderer on Windows seems to require manual hinting instructions to be added even when rendering at high DPI screens. I will not be adding this. Therefore, this font looks terrible on Windows, unless you're using an Electron app (VS Code, Atom, etc). They're using a custom renderer and render correctly.
-3. I don't care about `O0`, `lI1|`, or any of that crap. It's fine. See point #1.
+v1.0:
 
-If any of this bothers you, try [Hack](https://github.com/source-foundry/Hack). It's awesome. I made [my mod](https://github.com/BRUTALISM/Hack) available as well.
-
-### Why not Hack?
-
-Hack is great, but has way too many unnecessary modifications on top of the baseline DejaVu Sans Mono. To name a few:
-
-* the parentheses are unnecessarily spread out in earlier versions, and too rounded in newer ones
-* the `1` has an awkward downward facing arm
-* contributing is complicated if you're only using plain old FontForge (I don't want to shell out EUR 250 for Glyphs.app)
-* [alt-hack](https://github.com/source-foundry/alt-hack) is great but I ended up just using it to revert most mods back to the original DejaVu style, so I figured why bother?
-
-### Why not Menlo?
-
-* the uppercase `N` is hideously wide (once you see it, you can not unsee it)
-* punctuation is unnecessarily exaggerated
-* there are [many weird tweaks](http://leancrew.com/all-this/2009/10/the-compleat-menlovera-sans-comparison/) done to it (relative to its parent Bitstream Vera Sans Mono) to make it render better on ancient Mac OS versions with low-DPI monitors, which disqualifies it immediately (see point #1 in "Motivation" above)
-
-### Why not DejaVu Sans Mono?
-
-This typeface is almost perfect for programming<sup>&dagger;</sup>, except:
-
-* the underscore is ridiculously thin, making it visually odd when reading `THINGS_WITH_MANY_UNDERSCORES` and esoteric C/C++ identifiers with `__multiple__underscores__`
-* the lowercase `r` is offset a bit to the right (Hack has got this right – once you see it, you can not unsee it)
-* the `-` glyph is ridiculously narrow
-* other nitpicky stuff you really don't care about but I do
-
-<sup>&dagger;</sup> – [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) is still the king, and I don't dare [come at the king](https://www.youtube.com/watch?v=py1WDlaIr9A).
+* `r` – offset to the left
+* `_` – increase height, reduce width
+* `-` (minus) – make wider
+* `0` – slashed instead of dotted
 
 ## Building
 
@@ -114,11 +83,7 @@ Short version:
 * `make`
 * observe the `build` folder
 
-This will probably fail, so: [long version](BUILDING.md).
-
-## Contributing
-
-If you really convince me.
+See: [long version](BUILDING.md).
 
 ## License
 
