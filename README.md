@@ -2,7 +2,7 @@
 
 This has been forked from [Brutalist Mono](https://github.com/BRUTALISM/Brutalist) to have it recognized correctly as a fixed width font by macOS.
 
-Brutalist Mono is a fork of [DejaVu Sans Mono](https://github.com/dejavu-fonts/dejavu-fonts) which itself is a fork of [Bitstream Vera Sans Mono](https://web.archive.org/web/20210314185159/https://www.gnome.org/fonts/).
+Brutalist Mono is a fork of [DejaVu Sans Mono v2.37](https://github.com/dejavu-fonts/dejavu-fonts) which itself is a fork of [Bitstream Vera Sans Mono v1.10](https://web.archive.org/web/20210314185159/https://www.gnome.org/fonts/).
 
 ![brutalist](images/brutalist.jpg)
 
