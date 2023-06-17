@@ -1,7 +1,7 @@
-.PHONY: all check munge full sans lgc ttf full-ttf sans-ttf lgc-ttf status dist src-dist full-dist sans-dist lgc-dist norm check-harder pre-patch clean
+.PHONY: all check munge full lgc ttf full-ttf lgc-ttf status dist src-dist full-dist lgc-dist norm check-harder pre-patch clean
 
 # Release version
-VERSION = 1.0
+VERSION = 2.2
 # Snapshot version
 SNAPSHOT =
 # Initial source directory, assumed read-only
@@ -14,7 +14,6 @@ BUILDDIR  = build
 DISTDIR = dist
 
 # Release layout
-FONTCONFDIR = fontconfig
 DOCDIR = .
 SCRIPTSDIR = scripts
 TTFDIR = ttf
@@ -28,7 +27,6 @@ endif
 
 SRCARCHIVE  = brutalist-fonts-$(ARCHIVEVER)
 FULLARCHIVE = brutalist-fonts-ttf-$(ARCHIVEVER)
-SANSARCHIVE = brutalist-ttf-$(ARCHIVEVER)
 LGCARCHIVE  = brutalist-lgc-fonts-ttf-$(ARCHIVEVER)
 
 ARCHIVEEXT = .zip .tar.bz2
@@ -63,13 +61,12 @@ FONTCONF     := $(wildcard $(FONTCONFDIR)/*.conf)
 FONTCONFLGC  := $(wildcard $(FONTCONFDIR)/*lgc*.conf)
 FONTCONFFULL := $(filter-out $(FONTCONFLGC), $(FONTCONF))
 
-STATICDOC := $(addprefix $(DOCDIR)/, AUTHORS LICENSE NEWS README.md)
+STATICDOC := $(addprefix $(DOCDIR)/, LICENSE README.md)
 STATICSRCDOC := $(addprefix $(DOCDIR)/, BUILDING.md)
 GENDOCFULL = unicover.txt langcover.txt status.txt
-GENDOCSANS = unicover-sans.txt langcover-sans.txt
 GENDOCLGC  = unicover-lgc.txt langcover-lgc.txt
 
-all : full sans lgc
+all : full lgc
 
 $(TMPDIR)/%.sfd: $(SRCDIR)/%.sfd
 	@echo "[1] $< => $@"
@@ -107,59 +104,35 @@ $(BUILDDIR)/status.txt: $(FULLSFD)
 	install -d $(dir $@)
 	$(STATUS) $(VERSION) $(OLDSTATUS) $(FULLSFD) > $@
 
-$(BUILDDIR)/unicover.txt: $(patsubst %, $(TMPDIR)/%.sfd, Brutalist BrutalistSerif BrutalistMono)
+$(BUILDDIR)/unicover.txt: $(patsubst %, $(TMPDIR)/%.sfd, BrutalistMono)
 	@echo "[5] => $@"
 	install -d $(dir $@)
 	$(UNICOVER) $(UNICODEDATA) $(BLOCKS) \
-	            $(TMPDIR)/Brutalist.sfd "Sans" \
-	            $(TMPDIR)/BrutalistSerif.sfd "Serif" \
 	            $(TMPDIR)/BrutalistMono.sfd "Sans Mono" > $@
 
-$(BUILDDIR)/unicover-sans.txt: $(TMPDIR)/Brutalist.sfd
+$(BUILDDIR)/unicover-lgc.txt: $(patsubst %, $(TMPDIR)/%.sfd, BrutalistLGCSansMono)
 	@echo "[5] => $@"
 	install -d $(dir $@)
 	$(UNICOVER) $(UNICODEDATA) $(BLOCKS) \
-	            $(TMPDIR)/Brutalist.sfd "Sans" > $@
-
-$(BUILDDIR)/unicover-lgc.txt: $(patsubst %, $(TMPDIR)/%.sfd, BrutalistLGCSans BrutalistLGCSerif BrutalistLGCSansMono)
-	@echo "[5] => $@"
-	install -d $(dir $@)
-	$(UNICOVER) $(UNICODEDATA) $(BLOCKS) \
-	            $(TMPDIR)/BrutalistLGCSans.sfd "Sans" \
-	            $(TMPDIR)/BrutalistLGCSerif.sfd "Serif" \
 	            $(TMPDIR)/BrutalistLGCSansMono.sfd "Sans Mono" > $@
 
-$(BUILDDIR)/langcover.txt: $(patsubst %, $(TMPDIR)/%.sfd, Brutalist BrutalistSerif BrutalistMono)
+$(BUILDDIR)/langcover.txt: $(patsubst %, $(TMPDIR)/%.sfd, BrutalistMono)
 	@echo "[6] => $@"
 	install -d $(dir $@)
 ifeq "$(FC-LANG)" ""
 	touch $@
 else
 	$(LANGCOVER) $(FC-LANG) \
-	             $(TMPDIR)/Brutalist.sfd "Sans" \
-	             $(TMPDIR)/BrutalistSerif.sfd "Serif" \
 	             $(TMPDIR)/BrutalistMono.sfd "Sans Mono" > $@
 endif
 
-$(BUILDDIR)/langcover-sans.txt: $(TMPDIR)/Brutalist.sfd
+$(BUILDDIR)/langcover-lgc.txt: $(patsubst %, $(TMPDIR)/%.sfd, BrutalistLGCSansMono)
 	@echo "[6] => $@"
 	install -d $(dir $@)
 ifeq "$(FC-LANG)" ""
 	touch $@
 else
 	$(LANGCOVER) $(FC-LANG) \
-	             $(TMPDIR)/Brutalist.sfd "Sans" > $@
-endif
-
-$(BUILDDIR)/langcover-lgc.txt: $(patsubst %, $(TMPDIR)/%.sfd, BrutalistLGCSans BrutalistLGCSerif BrutalistLGCSansMono)
-	@echo "[6] => $@"
-	install -d $(dir $@)
-ifeq "$(FC-LANG)" ""
-	touch $@
-else
-	$(LANGCOVER) $(FC-LANG) \
-	             $(TMPDIR)/BrutalistLGCSans.sfd "Sans" \
-	             $(TMPDIR)/BrutalistLGCSerif.sfd "Serif" \
 	             $(TMPDIR)/BrutalistLGCSansMono.sfd "Sans Mono" > $@
 endif
 
@@ -174,42 +147,28 @@ $(TMPDIR)/$(SRCARCHIVE): $(addprefix $(BUILDDIR)/, $(GENDOCFULL) Makefile) $(FUL
 	@echo "[8] => $@"
 	install -d -m 0755 $@/$(SCRIPTSDIR)
 	install -d -m 0755 $@/$(SRCDIR)
-	install -d -m 0755 $@/$(FONTCONFDIR)
 	install -d -m 0755 $@/$(DOCDIR)
 	install -p -m 0644 $(BUILDDIR)/Makefile $@
 	install -p -m 0755 $(GENERATE) $(TTPOSTPROC) $(LGC) $(NORMALIZE) \
 	                   $(UNICOVER) $(LANGCOVER) $(STATUS) $(PROBLEMS) \
 	                   $@/$(SCRIPTSDIR)
 	install -p -m 0644 $(FULLSFD) $@/$(SRCDIR)
-	install -p -m 0644 $(FONTCONF) $@/$(FONTCONFDIR)
 	install -p -m 0644 $(addprefix $(BUILDDIR)/, $(GENDOCFULL)) \
 	                   $(STATICDOC) $(STATICSRCDOC) $@/$(DOCDIR)
 
 $(TMPDIR)/$(FULLARCHIVE): full
 	@echo "[8] => $@"
 	install -d -m 0755 $@/$(TTFDIR)
-	install -d -m 0755 $@/$(FONTCONFDIR)
 	install -d -m 0755 $@/$(DOCDIR)
 	install -p -m 0644 $(FULLTTF) $@/$(TTFDIR)
-	install -p -m 0644 $(FONTCONFFULL) $@/$(FONTCONFDIR)
 	install -p -m 0644 $(addprefix $(BUILDDIR)/, $(GENDOCFULL)) \
-	                   $(STATICDOC) $@/$(DOCDIR)
-
-$(TMPDIR)/$(SANSARCHIVE): sans
-	@echo "[8] => $@"
-	install -d -m 0755 $@/$(TTFDIR)
-	install -d -m 0755 $@/$(DOCDIR)
-	install -p -m 0644 $(BUILDDIR)/Brutalist.ttf $@/$(TTFDIR)
-	install -p -m 0644 $(addprefix $(BUILDDIR)/, $(GENDOCSANS)) \
 	                   $(STATICDOC) $@/$(DOCDIR)
 
 $(TMPDIR)/$(LGCARCHIVE): lgc
 	@echo "[8] => $@"
 	install -d -m 0755 $@/$(TTFDIR)
-	install -d -m 0755 $@/$(FONTCONFDIR)
 	install -d -m 0755 $@/$(DOCDIR)
 	install -p -m 0644 $(LGCTTF) $@/$(TTFDIR)
-	install -p -m 0644 $(FONTCONFLGC) $@/$(FONTCONFDIR)
 	install -p -m 0644 $(addprefix $(BUILDDIR)/, $(GENDOCLGC)) \
 	                   $(STATICDOC) $@/$(DOCDIR)
 
@@ -250,27 +209,21 @@ munge: $(NORMSFD)
 
 full : $(FULLTTF) $(addprefix $(BUILDDIR)/, $(GENDOCFULL))
 
-sans : $(addprefix $(BUILDDIR)/, Brutalist.ttf $(GENDOCSANS))
-
 lgc : $(LGCTTF) $(addprefix $(BUILDDIR)/, $(GENDOCLGC))
 
-ttf : full-ttf sans-ttf lgc-ttf
+ttf : full-ttf -ttf lgc-ttf
 
 full-ttf : $(FULLTTF)
-
-sans-ttf: $(BUILDDIR)/Brutalist.ttf
 
 lgc-ttf : $(LGCTTF)
 
 status : $(addprefix $(BUILDDIR)/, $(GENDOCFULL))
 
-dist : src-dist full-dist sans-dist lgc-dist
+dist : src-dist full-dist lgc-dist
 
 src-dist :  $(addprefix $(DISTDIR)/$(SRCARCHIVE),  $(ARCHIVEEXT) $(SUMEXT))
 
 full-dist : $(addprefix $(DISTDIR)/$(FULLARCHIVE), $(ARCHIVEEXT) $(SUMEXT))
-
-sans-dist : $(addprefix $(DISTDIR)/$(SANSARCHIVE), $(ARCHIVEEXT) $(SUMEXT))
 
 lgc-dist :  $(addprefix $(DISTDIR)/$(LGCARCHIVE),  $(ARCHIVEEXT) $(SUMEXT))
 
