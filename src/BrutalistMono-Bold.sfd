@@ -7878,7 +7878,7 @@ EndChar
 
 StartChar: r
 Encoding: 114 114 83
-Width: 1239
+Width: 1233
 Flags: W
 AnchorPoint: "below" 571 0 basechar 0
 AnchorPoint: "above" 571 1120 basechar 0
@@ -16346,7 +16346,7 @@ EndChar
 
 StartChar: racute
 Encoding: 341 341 277
-Width: 1239
+Width: 1233
 Flags: W
 LayerCount: 2
 Fore
@@ -16367,7 +16367,7 @@ EndChar
 
 StartChar: rcommaaccent
 Encoding: 343 343 279
-Width: 1239
+Width: 1233
 Flags: W
 LayerCount: 2
 Fore
@@ -16388,7 +16388,7 @@ EndChar
 
 StartChar: rcaron
 Encoding: 345 345 281
-Width: 1239
+Width: 1233
 Flags: W
 LayerCount: 2
 Fore
@@ -20152,7 +20152,7 @@ EndChar
 
 StartChar: uni0211
 Encoding: 529 529 457
-Width: 1239
+Width: 1233
 Flags: W
 LayerCount: 2
 Fore
@@ -20172,7 +20172,7 @@ EndChar
 
 StartChar: uni0213
 Encoding: 531 531 459
-Width: 1239
+Width: 1233
 Flags: W
 LayerCount: 2
 Fore
@@ -50462,7 +50462,7 @@ EndChar
 
 StartChar: uni1E59
 Encoding: 7769 7769 1613
-Width: 1239
+Width: 1233
 Flags: W
 LayerCount: 2
 Fore
@@ -50482,7 +50482,7 @@ EndChar
 
 StartChar: uni1E5B
 Encoding: 7771 7771 1615
-Width: 1239
+Width: 1233
 Flags: W
 LayerCount: 2
 Fore
@@ -50502,7 +50502,7 @@ EndChar
 
 StartChar: uni1E5D
 Encoding: 7773 7773 1617
-Width: 1239
+Width: 1233
 Flags: W
 LayerCount: 2
 Fore
@@ -50522,7 +50522,7 @@ EndChar
 
 StartChar: uni1E5F
 Encoding: 7775 7775 1619
-Width: 1239
+Width: 1233
 Flags: W
 LayerCount: 2
 Fore
