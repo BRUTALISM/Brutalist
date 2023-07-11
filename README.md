@@ -69,6 +69,10 @@ v2.1:
 * `*` – use Menlo variant
 * `l` – clean up bottom curve a little bit
 
+v2.1.1
+
+* fix: font not showing up as monospace ([#2](https://github.com/BRUTALISM/Brutalist/pull/2))
+
 ## Motivation
 
 Another DejaVu/Vera Mono clone? Yes. But this one is opinionated:
